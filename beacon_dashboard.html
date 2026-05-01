@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEACON — Dashboard</title>
+<style>
+  :root {
+    --bg: #0a0c0f;
+    --surface: #111418;
+    --border: #1e2530;
+    --accent: #00d4aa;
+    --warn: #f59e0b;
+    --danger: #ef4444;
+    --text: #e2e8f0;
+    --text2: #8896a8;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+  .header {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);
+  }
+  .logo-tag {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    letter-spacing: 0.15em; text-transform: uppercase;
+  }
+  .logo-title { font-size: 28px; font-weight: 300; }
+  .logo-title span { color: var(--accent); font-weight: 500; }
+  .logo-sub { font-size: 12px; color: var(--text2); font-family: var(--mono); }
+  .meta-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 1.5rem; }
+  .meta-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1rem;
+  }
+  .meta-card-label {
+    font-family: var(--mono); font-size: 10px; color: var(--text2);
+    text-transform: uppercase; letter-spacing: 0.1em;
+  }
+  .meta-card-value { font-size: 15px; font-weight: 500; }
+  .meta-card-value.accent { color: var(--accent); }
+  .meta-card-value.warn { color: var(--warn); }
+  .section {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+  }
+  .section-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
+  }
+  .section-num {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.2);
+    border-radius: 4px; padding: 2px 8px;
+  }
+  .section-title {
+    font-family: var(--mono); font-size: 12px; color: var(--text2);
+    text-transform: uppercase;
+  }
+  .section-body { font-size: 14px; line-height: 1.8; white-space: pre-wrap; }
+  .loading { text-align: center; padding: 3rem; color: var(--text2); }
+  .footer {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    font-family: var(--mono); font-size: 11px; color: var(--text2);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div>
+      <div class="logo-tag">Sistema de análisis conductual</div>
+      <div class="logo-title"><span>BEACON</span></div>
+      <div class="logo-sub">Behavioral Expression & Communication Observation Network</div>
+    </div>
+  </div>
+
+  <div id="content">
+    <div class="loading">Cargando datos conductuales...</div>
+  </div>
+
+  <div class="footer">BEACON v1.0 | Pipeline end-to-end</div>
+</div>
+
+<script>
+// Intentar cargar el JSON de Camila
+fetch('json_output/behavioral_camila.json')
+  .then(r => r.json())
+  .then(data => {
+    const visual = data.visual_events?.length || 0;
+    const vocal = data.vocal_events?.length || 0;
+    const verbal = data.transcript?.length || 0;
+    const flags = data.discrepancy_flags?.length || 0;
+
+    document.getElementById('content').innerHTML = `
+      <div class="meta-grid">
+        <div class="meta-card">
+          <div class="meta-card-label">Candidato</div>
+          <div class="meta-card-value">${data.candidate_alias}</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-card-label">Posición</div>
+          <div class="meta-card-value">${data.position}</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-card-label">Duración</div>
+          <div class="meta-card-value accent">${data.duration_seconds}s</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-card-label">Discrepancias</div>
+          <div class="meta-card-value warn">${flags} detectadas</div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <span class="section-title">Transcripción</span>
+        </div>
+        <div class="section-body">${data.transcript.map(s => `[${s.start}s-${s.end}s] ${s.text}`).join('\n')}</div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <span class="section-title">Eventos Visuales (${visual})</span>
+        </div>
+        <div class="section-body">${data.visual_events.slice(0, 15).map(e => `t=${e.timestamp}s | ${e.blendshape || e.label} | ${e.note || ''}`).join('\n')}
+        ${visual > 15 ? `\n... y ${visual - 15} más` : ''}</div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <span class="section-title">Eventos Vocales (${vocal})</span>
+        </div>
+        <div class="section-body">${data.vocal_events.slice(0, 10).map(e => `t=${e.timestamp}s | ${e.label} | ${e.note || ''}`).join('\n')}
+        ${vocal > 10 ? `\n... y ${vocal - 10} más` : ''}</div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <span class="section-title">Flags de Discrepancia (${flags})</span>
+        </div>
+        <div class="section-body">${data.discrepancy_flags.map(f => `⚠ t=${f.timestamp}s | ${f.suggestion}`).join('\n')}</div>
+      </div>
+
+      <div class="section">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <span class="section-title">Pipeline Status</span>
+        </div>
+        <div class="section-body">${data.status}</div>
+      </div>
+    `;
+  })
+  .catch(err => {
+    document.getElementById('content').innerHTML = `
+      <div class="section">
+        <div class="section-body">Error cargando datos: ${err.message}<br><br>
+        Asegúrate de que behavioral_camila.json existe en la carpeta json_output/</div>
+      </div>`;
+  });
+</script>
+</body>
+</html>

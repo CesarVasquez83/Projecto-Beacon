@@ -1,0 +1,79 @@
+================================================================
+  BEACON — INFORME DE ANÁLISIS CONDUCTUAL
+================================================================
+  Entrevista: BEACON-20260501-054721
+  Candidato: Cristina Perez
+  Posición:  No especificado
+  Duración:  45.9s
+  Generado:  2026-05-01 05:48:05
+  Capas:     Visual=0 | Vocal=105 | Verbal=8 | Flags=0
+================================================================
+
+# ANÁLISIS BEACON-20260501-054721
+
+## 1. RESUMEN EJECUTIVO
+
+Cristina presenta un discurso memorizado y mecánico, con picos de energía artificial que no coinciden con momentos de contenido relevante. La repetición literal de la introducción al final (42.5-45.7s) es un error evidente de edición o nerviosismo extremo que delata falta de naturalidad. El patrón vocal muestra sobreactuación en palabras comunes y caídas bruscas de energía en pausas, típico de quien está recitando sin internalizar el mensaje.
+
+## 2. SEÑALES DE ALERTA
+
+- **Repetición textual de apertura**: Dice "Hola, mi nombre es Cristina y tengo 24 años" DOS VECES (0-3s y 42.5-45.7s). Esto no es tartamudeo, es repetición idéntica. O es un video editado mal o perdió completamente el hilo.
+
+- **Picos de energía desconectados del contenido**: Los zscores más altos (4.38, 4.28, 4.16) ocurren en 30.7s y 35.5s, justo cuando habla de "Departamento de Selección" y "demostrar habilidades". Está forzando énfasis donde cree que debe sonar convincente, no donde naturalmente lo sentiría.
+
+- **Congelamiento vocal entre frases**: Cluster de pausas bajas (-2.83 zscore en 42.3-42.4s) justo antes de repetir su introducción. Hay un colapso total de energía, como si el cerebro se apagara.
+
+- **Inconsistencia idiomática sospechosa**: Menciona "ruso y mandavo" (21.7s). "Mandavo" no existe. ¿Quiso decir "mandarín"? Si hablas un idioma, sabes su nombre. Esto huele a currículum inflado.
+
+- **Ausencia total de eventos visuales**: Cero datos de expresión facial o lenguaje corporal. O la cámara estaba mal posicionada, o Cristina se quedó como estatua. Ninguna es buena señal.
+
+## 3. LÍNEA DE TIEMPO CONDUCTUAL
+
+**[0.0-3.0s] — Apertura con esfuerzo**  
+Transcripción: "Hola, mi nombre es Cristina y tengo 24 años."  
+Vocal: Arranca con pausas bajas (zscore -1.98), luego explota a alta energía (2.91, 2.9, 2.75) en medio de la frase.  
+**Lectura**: Está arrancando en frío. El pico de energía en "nombre" y "Cristina" es artificial, como cuando gritas tu nombre en un teléfono con mala conexión.
+
+**[3.4-7.6s] — Autopresentación genérica**  
+Transcripción: "Me considero una persona comunicativa, organizada y responsable."  
+Vocal: Pausas bajas en 3.2-3.3s, luego picos en 6.3s ("responsable"), seguidos de nueva caída en 6.5-6.6s.  
+**Lectura**: Está leyendo adjetivos de una lista. El énfasis en "responsable" es robótico. No hay convicción, hay recitación.
+
+**[8.1-13.4s] — Discurso de equipo memorizado**  
+Transcripción: "Me gusta trabajar en equipo porque tengo la convicción de que juntos se pueden lograr cosas mejores."  
+Vocal: Picos en 8.7-8.8s ("equipo"), luego todo se desinflama hacia 13.7s con pausas bajas consecutivas.  
+**Lectura**: "Convicción" es una palabra grande para alguien que la dice sin energía después. La frase completa es de manual de LinkedIn. Cero personalización.
+
+**[14.2-20.8s] — Bloque de crecimiento personal**  
+Transcripción: "Me gusta tratar con las personas y aprender de ellas..."  
+Vocal: Cinco pausas bajas seguidas en 14.0s. Silencio pesado antes de hablar de personas.  
+**Lectura**: Si realmente te gusta tratar con personas, no necesitas un minuto de silencio antes de decirlo. Esto es discurso preparado, no experiencia vivida.
+
+**[21.7-28.5s] — El momento "mandavo"**  
+Transcripción: "También confían mi formación académica, así como mis conocimientos lingüísticos, como el ruso y el mandavo."  
+Vocal: Picos en 22.0-22.3s ("confían"), pausas en 24.2-24.3s, luego explosión en 28.0-28.4s (zscore 3.35, el más alto hasta ese momento).  
+**Lectura**: "Confían" está mal conjugado (¿"cuento con"?). Y "mandavo" no existe. El pico de energía en 28.4s es justo cuando dice la palabra inventada. Está vendiendo humo con volumen alto.
+
+**[28.5-38.9s] — Cierre con sobreactuación**  
+Transcripción: "Me gustaría mucho integrarme en el Departamento de Selección..."  
+Vocal: Pausa en 28.9-29.0s, luego los picos MÁS ALTOS del video (4.38, 4.28 en 30.7s) en "Departamento". Más picos en 35.5s (4.16) en "demostrar".  
+**Lectura**: Está gritando las palabras clave. "Departamento de Selección" y "demostrar habilidades" suenan como si estuviera leyendo el título del puesto en voz alta. Es actuación de escuela primaria.
+
+**[39.4-41.1s] — Despedida normal**  
+Transcripción: "Muchas gracias por su atención."  
+Vocal: Cluster de pausas bajas en 39.1-39.3s.  
+**Lectura**: La parte más sincera del video. Baja la guardia porque ya terminó.
+
+**[42.5-45.7s] — REPETICIÓN LITERAL**  
+Transcripción: "Hola, mi nombre es Cristina y tengo 24 años."  
+Vocal: Pausas extremadamente bajas (hasta -2.83 zscore) justo antes en 42.3s, luego recupera energía en 43.0-43.4s (2.98, 2.89).  
+**Lectura**: Esto es crítico. O el video está editado y pegaron dos tomas, o Cristina se bloqueó completamente y reinició como robot. En cualquier caso, muestra falta total de control sobre su propio discurso.
+
+## 4. PREGUNTAS PARA ROMPER EL DISCURSO
+
+1. **"Cristina, dijiste que hab
+
+================================================================
+  BEACON v1.0 | Análisis conductual directo
+  Guardrails: sin juicios de contratación
+================================================================

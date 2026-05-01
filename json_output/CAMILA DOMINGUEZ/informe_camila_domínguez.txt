@@ -1,0 +1,87 @@
+================================================================
+  BEACON — INFORME DE ANÁLISIS CONDUCTUAL
+================================================================
+  Entrevista: BEACON-20260501-052719
+  Candidato: Camila Domínguez
+  Posición:  Video CV
+  Duración:  37.7s
+  Generado:  2026-05-01 05:28:04
+  Capas:     Visual=35 | Vocal=57 | Verbal=6 | Flags=18
+================================================================
+
+# ANÁLISIS BEACON-20260501-052719
+
+## 1. RESUMEN EJECUTIVO
+
+Camila muestra un patrón claro: **discurso ensayado con tensión emocional contenida**. La voz dice "apasionada" y "responsable", pero el rostro filtra microexpresiones de incomodidad (entrecierro de ojos, ceño fruncido) justo cuando habla de sus cualidades. No es que mienta sobre sus habilidades técnicas, pero **no se cree su propio pitch**. Hay inseguridad profunda que intenta compensar con energía vocal forzada.
+
+---
+
+## 2. SEÑALES DE ALERTA
+
+**Discrepancia verbal-visual repetida:**
+- En **4 de los 6 segmentos positivos** (pasión, trabajo en equipo, comunicación, responsabilidad), aparecen microexpresiones de tensión facial: entrecierro de ojos (19s, 20s, 25s, 31s, 35s) y fruncido de boca (29s).
+- Patrón: **dice algo bueno de sí misma → el rostro se tensa**.
+
+**Sobrecompensación vocal:**
+- 18 picos de energía vocal elevada (zscore >2) concentrados en momentos clave del discurso.
+- La energía no es natural, es **empujada**. Se esfuerza por sonar convincente.
+- El contraste con las 19 pausas de baja energía muestra que no sostiene esa activación: va de 0 a 100 y vuelve a 0.
+
+**Microexpresiones sin contenido verbal:**
+- Los primeros 3 segundos tienen elevación intensa de cejas (browInnerUp, browOuterUp ambos lados) mientras está en **silencio**. No es nerviosismo genérico, es activación emocional previa. Está procesando algo antes de empezar.
+
+**Errores de dicción bajo carga cognitiva:**
+- "Camila Aminges" (debería ser Domínguez), "Gonzá" (incompleto), "me consigieron" (probablemente "me considero"), "me puedes envolver" (¿desenvolver?), "escribir nuevas experiencias" (¿adquirir? ¿vivir?).
+- Los errores no son casuales: aparecen cuando está intentando proyectar confianza. **La carga de mantener la imagen interfiere con la fluidez**.
+
+**Expresión facial contradictoria al cierre:**
+- Dice "ganas de escribir nuevas experiencias" (positividad, futuro) mientras el rostro muestra entrecierro bilateral de ojos (35-36s) y caída abrupta de cejas. El cuerpo no compra lo que la boca vende.
+
+---
+
+## 3. LÍNEA DE TIEMPO CONDUCTUAL
+
+**[0-3s] Arranque con procesamiento emocional**
+- **Verbal:** Silencio inicial.
+- **Visual:** Elevación marcada de cejas internas y externas (ambos lados, delta >0.6). Entrecierro de ojo izquierdo.
+- **Vocal:** Pausa con baja energía.
+- **Interpretación:** No es nerviosismo simple. Está gestionando activación emocional antes de hablar. La elevación de cejas es señal de autoconciencia o anticipación de juicio.
+
+**[2-3s] Presentación con sobreesfuerzo**
+- **Verbal:** "Hola, mi nombre es Camila Aminges..."
+- **Visual:** Baja la intensidad de las cejas (offset).
+- **Vocal:** Primer pico de energía (zscore 2.02-2.18).
+- **Interpretación:** Intenta sonar profesional pero el error en su apellido (¿nerviosa? ¿no ensayó suficiente?) rompe la fluidez.
+
+**[7-10s] Información neutra, cuerpo relajado**
+- **Verbal:** "Actualmente trabajo en una jornada part-time en Burger King."
+- **Visual:** Apertura de mandíbula (jawOpen, 7s), relajación facial.
+- **Vocal:** Pico de energía (8s, zscore 2.36-2.59).
+- **Interpretación:** Cuando habla de hechos concretos (trabajo actual), el cuerpo se relaja. **No hay conflicto entre lo que dice y lo que siente**.
+
+**[10-17s] Habilidades técnicas con tensión leve**
+- **Verbal:** "Poso de experiencia en Microsoft Office..."
+- **Visual:** Elevación de ceja izquierda (12s, 16s). Caída de cejas (14s).
+- **Vocal:** Picos de alta energía (14.4s, zscore 2.14-2.75). Pausa (17s).
+- **Interpretación:** Dice "poso" en vez de "poseo". La elevación de cejas puede ser énfasis, pero la caída rápida sugiere duda fugaz. La voz compensa subiendo intensidad.
+
+**[17-25s] Discurso de autoelogio con filtración emocional**
+- **Verbal:** "Me consigieron una persona muy apasionada... trabajo en equipo... desenvolverme individualmente..."
+- **Visual:** Entrecierro bilateral de ojos (19-20s). Elevación de cejas (24s). Caída de cejas (25s).
+- **Vocal:** Sin eventos hasta el final del segmento.
+- **Interpretación:** **Aquí está el núcleo**. Habla de pasión y habilidades interpersonales, pero el rostro muestra incomodidad (entrecierro de ojos = tensión, escepticismo interno). No se cree lo que dice. El error "me consigieron" es lingüísticamente revelador: se objetiva a sí misma en vez de afirmarse ("me considero").
+
+**[24-30s] Comunicación e inglés con más tensión**
+- **Verbal:** "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés..."
+- **Visual:** Elevación fuerte de cejas (24s). Entrecierro de ojo izquierdo (25s). Fruncido leve de boca derecha (29s). Caída de cejas (30s).
+- **Vocal:** Explosión de energía (28.1-28.5s, zscore hasta 3.37). Luego caída abrupta a pausa (30.1-30.8s).
+- **Interpretación:** El fruncido de boca durante "nivel intermedio en inglés" es **desagrado fugaz**. Sabe que "intermedio" es conservador, o siente que no es suficiente. La voz sube dramáticamente (sobrecompensación) y luego colapsa en pausa larga. **Agotamiento emocional tras esfuerzo de proyección**.
+
+**[30-37s] Cierre con desconexión emocional**
+- **Verbal:** "Soy muy responsable... ganas de escribir nuevas experi
+
+================================================================
+  BEACON v1.0 | Análisis conductual directo
+  Guardrails: sin juicios de contratación
+================================================================

@@ -1,0 +1,159 @@
+================================================================
+  BEACON v4.0 — Behavioral Observability Platform
+  SPEC v4.0
+================================================================
+  Reporte: BEACON-20260501-114323
+  Candidato: Camila Domínguez | Puesto: Video CV | Duración: 37.7s
+  Generado: 2026-05-01 11:44:18
+  Señal: Face=79.2% | Audio=Alta
+  Hallazgos: 15 (HIGH=11 | MEDIUM=3 | LOW=1)
+================================================================
+  BEACON no determina veracidad ni estado psicológico. Detecta convergencias observables entre canales comunicativos para guiar repreguntas del entrevistador humano.
+================================================================
+
+# BEACON v4.0 — Informe de Análisis Multimodal
+
+**Report ID:** BEACON-20260501-114323  
+**Candidato:** Camila Domínguez  
+**Posición:** Video CV  
+**Duración:** 37.7 segundos  
+**Fecha de análisis:** 2026-05-01
+
+---
+
+## 1. RESUMEN DE OBSERVACIONES
+
+Se registra un video CV breve (37.7s) con visibilidad facial del 79.2% y calidad de audio alta. Se detectan múltiples convergencias entre activación vocal elevada (z-score 2.0-3.3) y cambios faciales en región de cejas durante segmentos de autoevaluación. También se observan contracciones oculares aisladas en tres momentos del discurso preparado. El patrón predominante es la activación multimodal durante afirmaciones sobre competencias personales.
+
+---
+
+## 2. HALLAZGOS PRINCIPALES (HIGH CONFIDENCE)
+
+Se detectaron **13 convergencias multimodales de alta confianza**, todas con el mismo patrón: elevación/descenso relativo de cejas + activación vocal elevada ≤1.5s.
+
+### **HALL_007 a HALL_024 (Patrón recurrente)**
+**Timestamps:** 2.1-3.1s, 2.3-3.3s, 14.4-15.4s, 14.5-15.5s, 28.5-30.7s (múltiples instancias), 29.7-30.8s, 29.8-30.8s, 31.0-32.1s, 35.9-36.9s, 36.2-37.2s
+
+**Contexto verbal:**  
+- "No hay transcripción cercana" (momentos de transición)
+- "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias" (cierre del video)
+
+**Señales convergentes:**
+- **Canal visual:** Cambios faciales breves en browInnerUp, browOuterUpLeft/Right (valores 0.40-0.88, deltas ±0.20-0.42)
+- **Canal vocal:** Activación elevada (z-score 2.02-3.37)
+- **Solapamiento temporal:** 100ms-1500ms
+
+**Hipótesis prudentes:**
+1. Puede reflejar énfasis comunicativo intencional durante contenido autoevaluativo
+2. Es compatible con mayor activación fisiológica al abordar competencias personales en formato grabado
+3. Una hipótesis prudente es que corresponde al patrón expresivo habitual de la candidata
+
+**Limitaciones específicas:**
+- La activación puede ser énfasis prosódico normal en español
+- Z-score calculado respecto a baseline propia, no poblacional
+- Muestreo visual de 1fps puede no capturar onset/offset real
+- Formato video CV sin interlocutor limita interpretación
+
+---
+
+## 3. OTROS PUNTOS DE ATENCIÓN (MEDIUM/LOW CONFIDENCE)
+
+### **MEDIUM CONFIDENCE**
+
+**HALL_001** (19-20s)  
+**Contexto:** "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien..."
+
+Se observa contracción ocular izquierda (eyeSquintLeft: 0.547→0.279, delta -0.268) durante autoevaluación positiva. **Señal aislada en canal visual**. Puede reflejar carga cognitiva al seleccionar palabras en formato grabado, o variabilidad facial normal de procesamiento.
+
+---
+
+**HALL_002** (25-29s)  
+**Contexto:** "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés"
+
+Se detecta contracción ocular izquierda (eyeSquintLeft) seguida de descenso derecho de comisura labial (mouthFrownRight: 0.247, delta +0.213). **Señales en canal visual sin correlación vocal cercana**. Puede indicar esfuerzo articulatorio o cambios faciales normales durante habla continua.
+
+---
+
+**HALL_003** (31-35s)  
+**Contexto:** "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias"
+
+Se registran contracciones oculares bilaterales (eyeSquintLeft a 31s, eyeSquintRight a 35s) durante cierre del discurso. **Señales visuales espaciadas temporalmente**. Entre las posibles explicaciones: fatiga ocular por grabación, procesamiento cognitivo final, o variabilidad expresiva normal.
+
+---
+
+### **LOW CONFIDENCE**
+
+**HALL_004** (0-0.5s)  
+**Contexto:** Inicio del video (silencio previo al habla)
+
+Se observa elevación de cejas (browInnerUp: 0.589) durante pausa de baja energía vocal inicial. **Señal aislada sin contexto verbal**. Podría indicar preparación comunicativa o ser artefacto de muestreo. No se puede descartar que sea variabilidad normal de inicio.
+
+---
+
+## 4. PREGUNTAS SUGERIDAS
+
+### **PRIORIDAD ALTA** (validar convergencias HIGH)
+
+1. **"Contame con más detalle qué significa para vos 'poner lo mejor de mí'. ¿Podés darme un ejemplo concreto de cuándo lo hiciste?"**  
+   *Justificación:* El segmento 28-37s concentra la mayor densidad de convergencias multimodales. Repreguntar permite observar si el patrón se mantiene en discurso espontáneo vs. preparado.
+
+2. **"Describime una situación concreta donde hayas trabajado en equipo y otra donde hayas trabajado de manera individual. ¿Cuál te resultó más cómoda?"**  
+   *Justificación:* El segmento 17-24s presenta tensión facial durante afirmación de versatilidad ("me gusta el trabajo en equipo... trabajando individualmente"). Validar con ejemplos específicos.
+
+3. **"¿Qué tipo de tareas realizás en tu trabajo part-time en Burger King? ¿Cuál es la que más te gusta?"**  
+   *Justificación:* El segmento 7.7-10.4s presenta activación vocal sin contexto verbal claro en transcripción. Comparar patrones en respuesta espontánea vs. discurso preparado.
+
+---
+
+### **PRIORIDAD MEDIA** (explorar señales MEDIUM)
+
+4. **"Cuando decís que tenés 'buenas capacidades comunicativas', ¿a qué te referís específicamente? Dame un ejemplo."**  
+   *Justificación:* Señales faciales durante autoevaluación de habilidades comunicativas (HALL_002, 24.8-29.8s).
+
+5. **"¿En qué contextos usás el inglés? ¿Qué tan cómoda te sentís conversando en inglés?"**  
+   *Justificación:* Evaluar nivel real vs. declarado ("nivel intermedio"). La señal facial puede reflejar autocrítica o incertidumbre sobre competencia lingüística.
+
+---
+
+### **PRIORIDAD CONTEXTUAL**
+
+6. **"¿Cómo te sentiste grabando este video? ¿Es la primera vez que hacés un video CV?"**  
+   *Justificación:* Establecer baseline de comodidad con formato grabado. Muchas señales detectadas son compatibles con activación normal en formato no interactivo.
+
+7. **"Contame qué te motivó a estudiar Recursos Humanos."**  
+   *Justificación:* Obtener narrativa espontánea sobre elección vocacional para comparar patrones expresivos con segmentos preparados.
+
+---
+
+## 5. NOTA METODOLÓGICA
+
+**BEACON no determina veracidad ni estado psicológico.** Este sistema detecta convergencias observables entre canales comunicativos (visual, vocal, verbal) para orientar repreguntas del entrevistador humano.
+
+### **Limitaciones específicas de este análisis:**
+
+1. **Formato video CV:** Discurso preparado sin interlocutor. Las señales detectadas pueden reflejar esfuerzo de memorización, no procesamiento cognitivo de veracidad.
+
+2. **Duración breve:** 37.7 segundos limitan la construcción de baseline robusta. Los z-scores son relativos al propio video, no a población de referencia.
+
+3. **Muestreo visual:** 1fps (1 frame por segundo) puede no capturar microexpresiones reales. Los "micro_onset/offset" detectados pueden ser artefactos de submuestreo.
+
+4. **Visibilidad facial:** 79.2% implica que 20.8% de frames carecen de datos faciales. Posibles gaps en detección de señales visuales.
+
+5. **Ausencia de contexto verbal completo:** Varios hallazgos HIGH ocurren en momentos marcados como "No hay transcripción cercana", limitando interpretación semántica.
+
+6. **Patrón repetitivo:** Las 13 convergencias HIGH corresponden al mismo tipo (cejas + energía vocal). Puede ser rasgo expresivo personal de la candidata, no indicador de contenido específico.
+
+### **Recordatorio crítico:**
+
+- **HIGH confidence** NO implica certeza sobre estado interno de la candidata
+- Las señales son **compatibles** con múltiples explicaciones (énfasis, activación, patrón habitual)
+- La convergencia multimodal indica "momento de atención", no "momento de engaño"
+- Este informe requiere validación en entrevista humana presencial
+
+---
+
+================================================================
+  BEACON v4.0 | SPEC v4.0
+  Este informe no determina veracidad ni estado psicológico.
+  Herramienta de apoyo al entrevistador humano.
+================================================================

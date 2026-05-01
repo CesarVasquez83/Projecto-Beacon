@@ -1,0 +1,873 @@
+{
+  "interview_id": "BEACON-CAMILA-001",
+  "candidate_alias": "Camila Domínguez",
+  "duration_seconds": 37.7,
+  "position": "No especificada (video CV)",
+  "source_video": "camila_dominguez_cv.mp4",
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 7.1,
+      "text": "Hola, mi nombre es Camila Aminges, tengo 20 años y soy estudiante de Gonzá en la carrera de Recursos Humanos en la Universidad de la Más de Zamora."
+    },
+    {
+      "start": 7.7,
+      "end": 10.4,
+      "text": "Actualmente trabajo en una jornada part-time en Burger King."
+    },
+    {
+      "start": 10.9,
+      "end": 16.8,
+      "text": "Poso de experiencia en lo que es el programa Microsoft Office como Word, Excel, Powerpoint, entre otros."
+    },
+    {
+      "start": 17.2,
+      "end": 24.8,
+      "text": "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien, trabajando individualmente."
+    },
+    {
+      "start": 24.8,
+      "end": 29.8,
+      "text": "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,"
+    },
+    {
+      "start": 30.5,
+      "end": 37.1,
+      "text": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias."
+    }
+  ],
+  "visual_events": [
+    {
+      "timestamp": 0,
+      "frame": "frame_0001.jpg",
+      "label": "browInnerUp_micro_onset",
+      "blendshape": "browInnerUp",
+      "value": 0.589,
+      "delta": 0.589,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 0,
+      "frame": "frame_0001.jpg",
+      "label": "browOuterUpLeft_micro_onset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.609,
+      "delta": 0.609,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 0,
+      "frame": "frame_0001.jpg",
+      "label": "browOuterUpRight_micro_onset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.652,
+      "delta": 0.652,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 0,
+      "frame": "frame_0001.jpg",
+      "label": "eyeSquintLeft_micro_onset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.214,
+      "delta": 0.214,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 3,
+      "frame": "frame_0004.jpg",
+      "label": "browInnerUp_micro_offset",
+      "blendshape": "browInnerUp",
+      "value": 0.564,
+      "delta": -0.206,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 3,
+      "frame": "frame_0004.jpg",
+      "label": "browOuterUpRight_micro_offset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.464,
+      "delta": -0.295,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 4,
+      "frame": "frame_0005.jpg",
+      "label": "browOuterUpLeft_micro_onset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.765,
+      "delta": 0.245,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 4,
+      "frame": "frame_0005.jpg",
+      "label": "browOuterUpRight_micro_onset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.741,
+      "delta": 0.277,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 4,
+      "frame": "frame_0005.jpg",
+      "label": "eyeSquintLeft_micro_onset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.552,
+      "delta": 0.309,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 4,
+      "frame": "frame_0005.jpg",
+      "label": "eyeSquintRight_micro_onset",
+      "blendshape": "eyeSquintRight",
+      "value": 0.485,
+      "delta": 0.211,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 5,
+      "frame": "frame_0006.jpg",
+      "label": "eyeSquintRight_micro_offset",
+      "blendshape": "eyeSquintRight",
+      "value": 0.197,
+      "delta": -0.288,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 7,
+      "frame": "frame_0008.jpg",
+      "label": "jawOpen_micro_onset",
+      "blendshape": "jawOpen",
+      "value": 0.208,
+      "delta": 0.206,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 12,
+      "frame": "frame_0013.jpg",
+      "label": "browOuterUpLeft_micro_onset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.866,
+      "delta": 0.25,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 14,
+      "frame": "frame_0015.jpg",
+      "label": "browInnerUp_micro_offset",
+      "blendshape": "browInnerUp",
+      "value": 0.559,
+      "delta": -0.306,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 14,
+      "frame": "frame_0015.jpg",
+      "label": "browOuterUpLeft_micro_offset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.607,
+      "delta": -0.254,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 14,
+      "frame": "frame_0015.jpg",
+      "label": "browOuterUpRight_micro_offset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.437,
+      "delta": -0.423,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 16,
+      "frame": "frame_0017.jpg",
+      "label": "browOuterUpLeft_micro_onset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.877,
+      "delta": 0.264,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 19,
+      "frame": "frame_0020.jpg",
+      "label": "eyeSquintLeft_micro_onset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.547,
+      "delta": 0.255,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 20,
+      "frame": "frame_0021.jpg",
+      "label": "eyeSquintLeft_micro_offset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.279,
+      "delta": -0.268,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 24,
+      "frame": "frame_0025.jpg",
+      "label": "browInnerUp_micro_onset",
+      "blendshape": "browInnerUp",
+      "value": 0.801,
+      "delta": 0.283,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 24,
+      "frame": "frame_0025.jpg",
+      "label": "browOuterUpRight_micro_onset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.878,
+      "delta": 0.361,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 25,
+      "frame": "frame_0026.jpg",
+      "label": "eyeSquintLeft_micro_offset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.212,
+      "delta": -0.23,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 27,
+      "frame": "frame_0028.jpg",
+      "label": "jawOpen_micro_onset",
+      "blendshape": "jawOpen",
+      "value": 0.243,
+      "delta": 0.228,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 28,
+      "frame": "frame_0029.jpg",
+      "label": "jawOpen_micro_offset",
+      "blendshape": "jawOpen",
+      "value": 0.002,
+      "delta": -0.241,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 29,
+      "frame": "frame_0030.jpg",
+      "label": "mouthFrownRight_micro_onset",
+      "blendshape": "mouthFrownRight",
+      "value": 0.247,
+      "delta": 0.213,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30,
+      "frame": "frame_0031.jpg",
+      "label": "browInnerUp_micro_offset",
+      "blendshape": "browInnerUp",
+      "value": 0.405,
+      "delta": -0.209,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30,
+      "frame": "frame_0031.jpg",
+      "label": "browOuterUpLeft_micro_offset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.413,
+      "delta": -0.28,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30,
+      "frame": "frame_0031.jpg",
+      "label": "browOuterUpRight_micro_offset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.421,
+      "delta": -0.249,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 30,
+      "frame": "frame_0031.jpg",
+      "label": "mouthFrownRight_micro_offset",
+      "blendshape": "mouthFrownRight",
+      "value": 0.005,
+      "delta": -0.242,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 31,
+      "frame": "frame_0032.jpg",
+      "label": "browOuterUpRight_micro_onset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.622,
+      "delta": 0.201,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 31,
+      "frame": "frame_0032.jpg",
+      "label": "eyeSquintLeft_micro_onset",
+      "blendshape": "eyeSquintLeft",
+      "value": 0.396,
+      "delta": 0.207,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 35,
+      "frame": "frame_0036.jpg",
+      "label": "eyeSquintRight_micro_onset",
+      "blendshape": "eyeSquintRight",
+      "value": 0.431,
+      "delta": 0.3,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 36,
+      "frame": "frame_0037.jpg",
+      "label": "browInnerUp_micro_offset",
+      "blendshape": "browInnerUp",
+      "value": 0.402,
+      "delta": -0.244,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 36,
+      "frame": "frame_0037.jpg",
+      "label": "browOuterUpLeft_micro_offset",
+      "blendshape": "browOuterUpLeft",
+      "value": 0.423,
+      "delta": -0.209,
+      "confidence": 0.85
+    },
+    {
+      "timestamp": 36,
+      "frame": "frame_0037.jpg",
+      "label": "browOuterUpRight_micro_offset",
+      "blendshape": "browOuterUpRight",
+      "value": 0.356,
+      "delta": -0.212,
+      "confidence": 0.85
+    }
+  ],
+  "vocal_events": [
+    {
+      "timestamp": 2.1,
+      "label": "high_energy",
+      "rms": 0.0528,
+      "zscore": 2.02,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 2.3,
+      "label": "high_energy",
+      "rms": 0.0551,
+      "zscore": 2.18,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 2.3,
+      "label": "high_energy",
+      "rms": 0.0549,
+      "zscore": 2.17,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 8.0,
+      "label": "high_energy",
+      "rms": 0.0577,
+      "zscore": 2.36,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 8.1,
+      "label": "high_energy",
+      "rms": 0.0611,
+      "zscore": 2.59,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 8.1,
+      "label": "high_energy",
+      "rms": 0.0568,
+      "zscore": 2.29,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 14.4,
+      "label": "high_energy",
+      "rms": 0.0545,
+      "zscore": 2.14,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 14.4,
+      "label": "high_energy",
+      "rms": 0.0628,
+      "zscore": 2.7,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 14.4,
+      "label": "high_energy",
+      "rms": 0.0636,
+      "zscore": 2.75,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 14.5,
+      "label": "high_energy",
+      "rms": 0.0592,
+      "zscore": 2.46,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 17.0,
+      "label": "low_energy_pause",
+      "rms": 0.0008,
+      "zscore": -1.5,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 28.1,
+      "label": "high_energy",
+      "rms": 0.0571,
+      "zscore": 2.32,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.1,
+      "label": "high_energy",
+      "rms": 0.0671,
+      "zscore": 2.99,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.2,
+      "label": "high_energy",
+      "rms": 0.0727,
+      "zscore": 3.37,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.2,
+      "label": "high_energy",
+      "rms": 0.07,
+      "zscore": 3.19,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.2,
+      "label": "high_energy",
+      "rms": 0.0578,
+      "zscore": 2.36,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.4,
+      "label": "high_energy",
+      "rms": 0.0562,
+      "zscore": 2.26,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.4,
+      "label": "high_energy",
+      "rms": 0.0569,
+      "zscore": 2.31,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 28.5,
+      "label": "high_energy",
+      "rms": 0.0541,
+      "zscore": 2.11,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 29.7,
+      "label": "high_energy",
+      "rms": 0.0597,
+      "zscore": 2.49,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 29.8,
+      "label": "high_energy",
+      "rms": 0.0673,
+      "zscore": 3.01,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 29.8,
+      "label": "high_energy",
+      "rms": 0.0682,
+      "zscore": 3.07,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 29.8,
+      "label": "high_energy",
+      "rms": 0.0582,
+      "zscore": 2.39,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 30.1,
+      "label": "low_energy_pause",
+      "rms": 0.0006,
+      "zscore": -1.51,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.2,
+      "label": "low_energy_pause",
+      "rms": 0.0006,
+      "zscore": -1.51,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.2,
+      "label": "low_energy_pause",
+      "rms": 0.0006,
+      "zscore": -1.51,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.2,
+      "label": "low_energy_pause",
+      "rms": 0.0005,
+      "zscore": -1.52,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.3,
+      "label": "low_energy_pause",
+      "rms": 0.0005,
+      "zscore": -1.52,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.3,
+      "label": "low_energy_pause",
+      "rms": 0.0005,
+      "zscore": -1.52,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.3,
+      "label": "low_energy_pause",
+      "rms": 0.0006,
+      "zscore": -1.51,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.4,
+      "label": "low_energy_pause",
+      "rms": 0.0007,
+      "zscore": -1.5,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.4,
+      "label": "low_energy_pause",
+      "rms": 0.0007,
+      "zscore": -1.5,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 30.8,
+      "label": "low_energy_pause",
+      "rms": 0.0006,
+      "zscore": -1.51,
+      "note": "Posible pausa o volumen bajo"
+    },
+    {
+      "timestamp": 31.0,
+      "label": "high_energy",
+      "rms": 0.0649,
+      "zscore": 2.84,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 31.1,
+      "label": "high_energy",
+      "rms": 0.065,
+      "zscore": 2.85,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 31.1,
+      "label": "high_energy",
+      "rms": 0.0637,
+      "zscore": 2.76,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 31.1,
+      "label": "high_energy",
+      "rms": 0.0568,
+      "zscore": 2.3,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 33.5,
+      "label": "high_energy",
+      "rms": 0.0553,
+      "zscore": 2.19,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 33.5,
+      "label": "high_energy",
+      "rms": 0.0647,
+      "zscore": 2.83,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 33.5,
+      "label": "high_energy",
+      "rms": 0.063,
+      "zscore": 2.72,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 33.6,
+      "label": "high_energy",
+      "rms": 0.0546,
+      "zscore": 2.15,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 35.9,
+      "label": "high_energy",
+      "rms": 0.0555,
+      "zscore": 2.2,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 36.2,
+      "label": "high_energy",
+      "rms": 0.0552,
+      "zscore": 2.19,
+      "note": "Energía vocal elevada"
+    },
+    {
+      "timestamp": 36.2,
+      "label": "high_energy",
+      "rms": 0.0564,
+      "zscore": 2.27,
+      "note": "Energía vocal elevada"
+    }
+  ],
+  "discrepancy_flags": [
+    {
+      "timestamp": 2.1,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 2.3,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 14.4,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 14.5,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 19,
+      "segment": "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien, trabajando individualmente.",
+      "verbal": "positivo",
+      "visual": "eyeSquintLeft (eyeSquintLeft_micro_onset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-eyeSquintLeft"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 20,
+      "segment": "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien, trabajando individualmente.",
+      "verbal": "positivo",
+      "visual": "eyeSquintLeft (eyeSquintLeft_micro_offset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-eyeSquintLeft"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 25,
+      "segment": "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,",
+      "verbal": "positivo",
+      "visual": "eyeSquintLeft (eyeSquintLeft_micro_offset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-eyeSquintLeft"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 28.5,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 29,
+      "segment": "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,",
+      "verbal": "positivo",
+      "visual": "mouthFrownRight (mouthFrownRight_micro_onset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-mouthFrownRight"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 29.7,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 29.8,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 31,
+      "segment": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "verbal": "positivo",
+      "visual": "eyeSquintLeft (eyeSquintLeft_micro_onset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-eyeSquintLeft"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 31.0,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 31.1,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 35,
+      "segment": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "verbal": "positivo",
+      "visual": "eyeSquintRight (eyeSquintRight_micro_onset)",
+      "vocal": "pendiente",
+      "layers_mismatch": [
+        "verbal-positive",
+        "visual-eyeSquintRight"
+      ],
+      "suggestion": "Explorar si hay tensión oculta detrás del discurso positivo."
+    },
+    {
+      "timestamp": 35.9,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    },
+    {
+      "timestamp": 36.2,
+      "segment": "Ver transcripción cercana",
+      "verbal": "por verificar",
+      "visual": "brow raise (sorpresa/alerta)",
+      "vocal": "high_energy",
+      "layers_mismatch": [
+        "vocal-arousal",
+        "visual-alert"
+      ],
+      "suggestion": "Elevación de cejas + alta energía vocal. Posible énfasis o ansiedad."
+    }
+  ],
+  "status": "complete — all layers + discrepancy analysis"
+}

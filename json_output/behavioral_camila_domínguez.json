@@ -1,0 +1,1911 @@
+{
+  "report_id": "BEACON-20260501-114323",
+  "pipeline_version": "4.0",
+  "spec_version": "4.0",
+  "candidate_alias": "Camila Domínguez",
+  "position": "Video CV",
+  "duration_seconds": 37.7,
+  "source_video": "camila_dominguez_cv.mp4",
+  "product_label": "BEACON — Behavioral Observability Platform",
+  "methodology": {
+    "disclaimer": "BEACON no determina veracidad ni estado psicológico. Detecta convergencias observables entre canales comunicativos para guiar repreguntas del entrevistador humano.",
+    "confidence_definition": "HIGH: convergencia 2+ canales ≤1.5s. MEDIUM: señal en 1 canal con correlación parcial. LOW: señal aislada. No implica certeza sobre estado del candidato.",
+    "zscore_note": "Z-score relativo a baseline del propio video, no poblacional.",
+    "usage_note": "Las observaciones requieren validación en interacción humana."
+  },
+  "signal_quality": {
+    "face_visibility_pct": 79.2,
+    "audio_clarity": "high",
+    "video_duration_short": false,
+    "total_frames": 48,
+    "frames_with_face": 38,
+    "fps": 1
+  },
+  "baseline": {
+    "vocal_energy_mean": 0.02291,
+    "vocal_energy_std": 0.01476,
+    "pitch_baseline_hz": 312.3,
+    "facial_activation_mean": {
+      "browInnerUp": 0.677,
+      "browDownLeft": 0.0,
+      "browDownRight": 0.0,
+      "browOuterUpLeft": 0.672,
+      "browOuterUpRight": 0.67,
+      "eyeWideLeft": 0.014,
+      "eyeWideRight": 0.015,
+      "eyeSquintLeft": 0.311,
+      "eyeSquintRight": 0.251,
+      "mouthSmileLeft": 0.021,
+      "mouthSmileRight": 0.017,
+      "mouthFrownLeft": 0.024,
+      "mouthFrownRight": 0.04,
+      "jawOpen": 0.038,
+      "lipCornerDepressorLeft": 0.0,
+      "lipCornerDepressorRight": 0.0
+    }
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 7.1,
+      "text": "Hola, mi nombre es Camila Aminges, tengo 20 años y soy estudiante de Gonzá en la carrera de Recursos Humanos en la Universidad de la Más de Zamora."
+    },
+    {
+      "start": 7.7,
+      "end": 10.4,
+      "text": "Actualmente trabajo en una jornada part-time en Burger King."
+    },
+    {
+      "start": 10.9,
+      "end": 16.8,
+      "text": "Poso de experiencia en lo que es el programa Microsoft Office como Word, Excel, Powerpoint, entre otros."
+    },
+    {
+      "start": 17.2,
+      "end": 24.8,
+      "text": "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien, trabajando individualmente."
+    },
+    {
+      "start": 24.8,
+      "end": 29.8,
+      "text": "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,"
+    },
+    {
+      "start": 30.5,
+      "end": 37.1,
+      "text": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias."
+    }
+  ],
+  "visual_events": [
+    {
+      "event_id": "EVT_V001",
+      "timestamp": 0,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.589,
+      "delta": 0.589,
+      "label": "browInnerUp_micro_onset"
+    },
+    {
+      "event_id": "EVT_V002",
+      "timestamp": 0,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.609,
+      "delta": 0.609,
+      "label": "browOuterUpLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V003",
+      "timestamp": 0,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.652,
+      "delta": 0.652,
+      "label": "browOuterUpRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V004",
+      "timestamp": 0,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.214,
+      "delta": 0.214,
+      "label": "eyeSquintLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V005",
+      "timestamp": 3,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.564,
+      "delta": -0.206,
+      "label": "browInnerUp_micro_offset"
+    },
+    {
+      "event_id": "EVT_V006",
+      "timestamp": 3,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.464,
+      "delta": -0.295,
+      "label": "browOuterUpRight_micro_offset"
+    },
+    {
+      "event_id": "EVT_V007",
+      "timestamp": 4,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.765,
+      "delta": 0.245,
+      "label": "browOuterUpLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V008",
+      "timestamp": 4,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.741,
+      "delta": 0.277,
+      "label": "browOuterUpRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V009",
+      "timestamp": 4,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.552,
+      "delta": 0.309,
+      "label": "eyeSquintLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V010",
+      "timestamp": 4,
+      "channel": "visual",
+      "signal_type": "eyeSquintRight",
+      "value": 0.485,
+      "delta": 0.211,
+      "label": "eyeSquintRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V011",
+      "timestamp": 5,
+      "channel": "visual",
+      "signal_type": "eyeSquintRight",
+      "value": 0.197,
+      "delta": -0.288,
+      "label": "eyeSquintRight_micro_offset"
+    },
+    {
+      "event_id": "EVT_V012",
+      "timestamp": 7,
+      "channel": "visual",
+      "signal_type": "jawOpen",
+      "value": 0.208,
+      "delta": 0.206,
+      "label": "jawOpen_micro_onset"
+    },
+    {
+      "event_id": "EVT_V013",
+      "timestamp": 12,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.866,
+      "delta": 0.25,
+      "label": "browOuterUpLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V014",
+      "timestamp": 14,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.559,
+      "delta": -0.306,
+      "label": "browInnerUp_micro_offset"
+    },
+    {
+      "event_id": "EVT_V015",
+      "timestamp": 14,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.607,
+      "delta": -0.254,
+      "label": "browOuterUpLeft_micro_offset"
+    },
+    {
+      "event_id": "EVT_V016",
+      "timestamp": 14,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.437,
+      "delta": -0.423,
+      "label": "browOuterUpRight_micro_offset"
+    },
+    {
+      "event_id": "EVT_V017",
+      "timestamp": 16,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.877,
+      "delta": 0.264,
+      "label": "browOuterUpLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V018",
+      "timestamp": 19,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.547,
+      "delta": 0.255,
+      "label": "eyeSquintLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V019",
+      "timestamp": 20,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.279,
+      "delta": -0.268,
+      "label": "eyeSquintLeft_micro_offset"
+    },
+    {
+      "event_id": "EVT_V020",
+      "timestamp": 24,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.801,
+      "delta": 0.283,
+      "label": "browInnerUp_micro_onset"
+    },
+    {
+      "event_id": "EVT_V021",
+      "timestamp": 24,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.878,
+      "delta": 0.361,
+      "label": "browOuterUpRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V022",
+      "timestamp": 25,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.212,
+      "delta": -0.23,
+      "label": "eyeSquintLeft_micro_offset"
+    },
+    {
+      "event_id": "EVT_V023",
+      "timestamp": 27,
+      "channel": "visual",
+      "signal_type": "jawOpen",
+      "value": 0.243,
+      "delta": 0.228,
+      "label": "jawOpen_micro_onset"
+    },
+    {
+      "event_id": "EVT_V024",
+      "timestamp": 28,
+      "channel": "visual",
+      "signal_type": "jawOpen",
+      "value": 0.002,
+      "delta": -0.241,
+      "label": "jawOpen_micro_offset"
+    },
+    {
+      "event_id": "EVT_V025",
+      "timestamp": 29,
+      "channel": "visual",
+      "signal_type": "mouthFrownRight",
+      "value": 0.247,
+      "delta": 0.213,
+      "label": "mouthFrownRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V026",
+      "timestamp": 30,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.405,
+      "delta": -0.209,
+      "label": "browInnerUp_micro_offset"
+    },
+    {
+      "event_id": "EVT_V027",
+      "timestamp": 30,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.413,
+      "delta": -0.28,
+      "label": "browOuterUpLeft_micro_offset"
+    },
+    {
+      "event_id": "EVT_V028",
+      "timestamp": 30,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.421,
+      "delta": -0.249,
+      "label": "browOuterUpRight_micro_offset"
+    },
+    {
+      "event_id": "EVT_V029",
+      "timestamp": 30,
+      "channel": "visual",
+      "signal_type": "mouthFrownRight",
+      "value": 0.005,
+      "delta": -0.242,
+      "label": "mouthFrownRight_micro_offset"
+    },
+    {
+      "event_id": "EVT_V030",
+      "timestamp": 31,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.622,
+      "delta": 0.201,
+      "label": "browOuterUpRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V031",
+      "timestamp": 31,
+      "channel": "visual",
+      "signal_type": "eyeSquintLeft",
+      "value": 0.396,
+      "delta": 0.207,
+      "label": "eyeSquintLeft_micro_onset"
+    },
+    {
+      "event_id": "EVT_V032",
+      "timestamp": 35,
+      "channel": "visual",
+      "signal_type": "eyeSquintRight",
+      "value": 0.431,
+      "delta": 0.3,
+      "label": "eyeSquintRight_micro_onset"
+    },
+    {
+      "event_id": "EVT_V033",
+      "timestamp": 36,
+      "channel": "visual",
+      "signal_type": "browInnerUp",
+      "value": 0.402,
+      "delta": -0.244,
+      "label": "browInnerUp_micro_offset"
+    },
+    {
+      "event_id": "EVT_V034",
+      "timestamp": 36,
+      "channel": "visual",
+      "signal_type": "browOuterUpLeft",
+      "value": 0.423,
+      "delta": -0.209,
+      "label": "browOuterUpLeft_micro_offset"
+    },
+    {
+      "event_id": "EVT_V035",
+      "timestamp": 36,
+      "channel": "visual",
+      "signal_type": "browOuterUpRight",
+      "value": 0.356,
+      "delta": -0.212,
+      "label": "browOuterUpRight_micro_offset"
+    }
+  ],
+  "vocal_events": [
+    {
+      "event_id": "EVT_A001",
+      "timestamp": 0.0,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.55
+    },
+    {
+      "event_id": "EVT_A002",
+      "timestamp": 0.4,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A003",
+      "timestamp": 2.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.02
+    },
+    {
+      "event_id": "EVT_A004",
+      "timestamp": 2.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.18
+    },
+    {
+      "event_id": "EVT_A005",
+      "timestamp": 2.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.17
+    },
+    {
+      "event_id": "EVT_A006",
+      "timestamp": 8.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.36
+    },
+    {
+      "event_id": "EVT_A007",
+      "timestamp": 8.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.59
+    },
+    {
+      "event_id": "EVT_A008",
+      "timestamp": 8.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.29
+    },
+    {
+      "event_id": "EVT_A009",
+      "timestamp": 14.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.14
+    },
+    {
+      "event_id": "EVT_A010",
+      "timestamp": 14.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.7
+    },
+    {
+      "event_id": "EVT_A011",
+      "timestamp": 14.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.75
+    },
+    {
+      "event_id": "EVT_A012",
+      "timestamp": 14.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.46
+    },
+    {
+      "event_id": "EVT_A013",
+      "timestamp": 17.0,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.5
+    },
+    {
+      "event_id": "EVT_A014",
+      "timestamp": 28.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.32
+    },
+    {
+      "event_id": "EVT_A015",
+      "timestamp": 28.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.99
+    },
+    {
+      "event_id": "EVT_A016",
+      "timestamp": 28.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.37
+    },
+    {
+      "event_id": "EVT_A017",
+      "timestamp": 28.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.19
+    },
+    {
+      "event_id": "EVT_A018",
+      "timestamp": 28.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.36
+    },
+    {
+      "event_id": "EVT_A019",
+      "timestamp": 28.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.26
+    },
+    {
+      "event_id": "EVT_A020",
+      "timestamp": 28.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.31
+    },
+    {
+      "event_id": "EVT_A021",
+      "timestamp": 28.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.11
+    },
+    {
+      "event_id": "EVT_A022",
+      "timestamp": 29.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.49
+    },
+    {
+      "event_id": "EVT_A023",
+      "timestamp": 29.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.01
+    },
+    {
+      "event_id": "EVT_A024",
+      "timestamp": 29.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.07
+    },
+    {
+      "event_id": "EVT_A025",
+      "timestamp": 29.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.39
+    },
+    {
+      "event_id": "EVT_A026",
+      "timestamp": 30.1,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.51
+    },
+    {
+      "event_id": "EVT_A027",
+      "timestamp": 30.2,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.51
+    },
+    {
+      "event_id": "EVT_A028",
+      "timestamp": 30.2,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.51
+    },
+    {
+      "event_id": "EVT_A029",
+      "timestamp": 30.2,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A030",
+      "timestamp": 30.3,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A031",
+      "timestamp": 30.3,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A032",
+      "timestamp": 30.3,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.51
+    },
+    {
+      "event_id": "EVT_A033",
+      "timestamp": 30.4,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.5
+    },
+    {
+      "event_id": "EVT_A034",
+      "timestamp": 30.4,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.5
+    },
+    {
+      "event_id": "EVT_A035",
+      "timestamp": 30.8,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.51
+    },
+    {
+      "event_id": "EVT_A036",
+      "timestamp": 31.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.84
+    },
+    {
+      "event_id": "EVT_A037",
+      "timestamp": 31.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.85
+    },
+    {
+      "event_id": "EVT_A038",
+      "timestamp": 31.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.76
+    },
+    {
+      "event_id": "EVT_A039",
+      "timestamp": 31.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.3
+    },
+    {
+      "event_id": "EVT_A040",
+      "timestamp": 33.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.19
+    },
+    {
+      "event_id": "EVT_A041",
+      "timestamp": 33.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.83
+    },
+    {
+      "event_id": "EVT_A042",
+      "timestamp": 33.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.72
+    },
+    {
+      "event_id": "EVT_A043",
+      "timestamp": 33.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.15
+    },
+    {
+      "event_id": "EVT_A044",
+      "timestamp": 35.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.2
+    },
+    {
+      "event_id": "EVT_A045",
+      "timestamp": 36.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.19
+    },
+    {
+      "event_id": "EVT_A046",
+      "timestamp": 36.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.27
+    },
+    {
+      "event_id": "EVT_A047",
+      "timestamp": 37.4,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A048",
+      "timestamp": 37.4,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A049",
+      "timestamp": 37.5,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A050",
+      "timestamp": 37.5,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A051",
+      "timestamp": 37.5,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A052",
+      "timestamp": 37.6,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A053",
+      "timestamp": 37.6,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A054",
+      "timestamp": 37.6,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A055",
+      "timestamp": 37.7,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A056",
+      "timestamp": 37.7,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.52
+    },
+    {
+      "event_id": "EVT_A057",
+      "timestamp": 37.7,
+      "channel": "vocal",
+      "signal_type": "low_energy_pause",
+      "zscore": -1.53
+    }
+  ],
+  "hallazgos": [
+    {
+      "hallazgo_id": "HALL_004",
+      "finding_type": "single_event",
+      "timestamp_start": -0.5,
+      "timestamp_end": 0.5,
+      "verbal_context": "N/A (silencio)",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.589,
+          "timestamp": 0,
+          "event_id": "EVT_V001"
+        },
+        {
+          "channel": "vocal",
+          "signal": "pausa",
+          "timestamp": 0.0,
+          "event_id": "EVT_A001"
+        }
+      ],
+      "cross_channel_pattern": "cambio_facial_durante_silencio",
+      "confidence": "LOW",
+      "hypotheses": [
+        "Posible procesamiento durante silencio",
+        "Artefacto de muestreo (1fps)",
+        "Variabilidad facial normal"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "CONTEXTUAL",
+          "question": "Observar si el patrón se repite en otros silencios."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "Señal aislada sin contexto verbal"
+        ],
+        "visual": [
+          "Muestreo 1fps puede no capturar onset real"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R2"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_007",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_001",
+      "timestamp_start": 1.1,
+      "timestamp_end": 3.1,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.564,
+          "timestamp": 3,
+          "event_id": "EVT_V005"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.464,
+          "timestamp": 3,
+          "event_id": "EVT_V006"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.02,
+          "timestamp": 2.1,
+          "event_id": "EVT_A003"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 899,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_008",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_002",
+      "timestamp_start": 1.3,
+      "timestamp_end": 3.3,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.564,
+          "timestamp": 3,
+          "event_id": "EVT_V005"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.464,
+          "timestamp": 3,
+          "event_id": "EVT_V006"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.18,
+          "timestamp": 2.3,
+          "event_id": "EVT_A004"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 700,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_010",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_004",
+      "timestamp_start": 13.4,
+      "timestamp_end": 15.4,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.559,
+          "timestamp": 14,
+          "event_id": "EVT_V014"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.607,
+          "timestamp": 14,
+          "event_id": "EVT_V015"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.437,
+          "timestamp": 14,
+          "event_id": "EVT_V016"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.14,
+          "timestamp": 14.4,
+          "event_id": "EVT_A009"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 400,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_013",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_007",
+      "timestamp_start": 13.5,
+      "timestamp_end": 15.5,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.559,
+          "timestamp": 14,
+          "event_id": "EVT_V014"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.607,
+          "timestamp": 14,
+          "event_id": "EVT_V015"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.437,
+          "timestamp": 14,
+          "event_id": "EVT_V016"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.46,
+          "timestamp": 14.5,
+          "event_id": "EVT_A012"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 500,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_001",
+      "finding_type": "single_event",
+      "timestamp_start": 17.2,
+      "timestamp_end": 24.8,
+      "verbal_context": "Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo en el equipo, pero también sé que me puedes envolver muy bien, trabajan",
+      "channels_involved": [
+        "visual",
+        "verbal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "eyeSquintLeft",
+          "value": 0.547,
+          "timestamp": 19,
+          "event_id": "EVT_V018"
+        },
+        {
+          "channel": "visual",
+          "signal": "eyeSquintLeft",
+          "value": 0.279,
+          "timestamp": 20,
+          "event_id": "EVT_V019"
+        }
+      ],
+      "cross_channel_pattern": "tension_facial_durante_discurso_positivo",
+      "confidence": "MEDIUM",
+      "hypotheses": [
+        "Carga cognitiva al autoevaluarse en formato grabado",
+        "Esfuerzo por seleccionar palabras adecuadas",
+        "Cambios faciales normales de procesamiento"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "MEDIA",
+          "question": "Pedir ejemplo concreto: 'Me consigieron una persona muy apasionada por lo que hago, me gusta el trabajo e...'"
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "Formato video CV sin interlocutor"
+        ],
+        "visual": [
+          "Face visibility: 79.2%",
+          "Muestreo 1fps"
+        ],
+        "verbal": [
+          "Discurso preparado"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R1"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_002",
+      "finding_type": "single_event",
+      "timestamp_start": 24.8,
+      "timestamp_end": 29.8,
+      "verbal_context": "Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,",
+      "channels_involved": [
+        "visual",
+        "verbal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "eyeSquintLeft",
+          "value": 0.212,
+          "timestamp": 25,
+          "event_id": "EVT_V022"
+        },
+        {
+          "channel": "visual",
+          "signal": "mouthFrownRight",
+          "value": 0.247,
+          "timestamp": 29,
+          "event_id": "EVT_V025"
+        }
+      ],
+      "cross_channel_pattern": "tension_facial_durante_discurso_positivo",
+      "confidence": "MEDIUM",
+      "hypotheses": [
+        "Carga cognitiva al autoevaluarse en formato grabado",
+        "Esfuerzo por seleccionar palabras adecuadas",
+        "Cambios faciales normales de procesamiento"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "MEDIA",
+          "question": "Pedir ejemplo concreto: 'Tengo buenas capacidades comunicativas, poseo un nivel intermedio en inglés,...'"
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "Formato video CV sin interlocutor"
+        ],
+        "visual": [
+          "Face visibility: 79.2%",
+          "Muestreo 1fps"
+        ],
+        "verbal": [
+          "Discurso preparado"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R1"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_014",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_008",
+      "timestamp_start": 27.5,
+      "timestamp_end": 29.5,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.405,
+          "timestamp": 30,
+          "event_id": "EVT_V026"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.413,
+          "timestamp": 30,
+          "event_id": "EVT_V027"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.421,
+          "timestamp": 30,
+          "event_id": "EVT_V028"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.11,
+          "timestamp": 28.5,
+          "event_id": "EVT_A021"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 1500,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_015",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_009",
+      "timestamp_start": 28.7,
+      "timestamp_end": 30.7,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.405,
+          "timestamp": 30,
+          "event_id": "EVT_V026"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.413,
+          "timestamp": 30,
+          "event_id": "EVT_V027"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.421,
+          "timestamp": 30,
+          "event_id": "EVT_V028"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.49,
+          "timestamp": 29.7,
+          "event_id": "EVT_A022"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 300,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_016",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_010",
+      "timestamp_start": 28.8,
+      "timestamp_end": 30.8,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.405,
+          "timestamp": 30,
+          "event_id": "EVT_V026"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.413,
+          "timestamp": 30,
+          "event_id": "EVT_V027"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.421,
+          "timestamp": 30,
+          "event_id": "EVT_V028"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 3.01,
+          "timestamp": 29.8,
+          "event_id": "EVT_A023"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 199,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_019",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_013",
+      "timestamp_start": 30.0,
+      "timestamp_end": 32.0,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.405,
+          "timestamp": 30,
+          "event_id": "EVT_V026"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.413,
+          "timestamp": 30,
+          "event_id": "EVT_V027"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.421,
+          "timestamp": 30,
+          "event_id": "EVT_V028"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.84,
+          "timestamp": 31.0,
+          "event_id": "EVT_A036"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 1000,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_020",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_014",
+      "timestamp_start": 30.1,
+      "timestamp_end": 32.1,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.405,
+          "timestamp": 30,
+          "event_id": "EVT_V026"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.413,
+          "timestamp": 30,
+          "event_id": "EVT_V027"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.421,
+          "timestamp": 30,
+          "event_id": "EVT_V028"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.85,
+          "timestamp": 31.1,
+          "event_id": "EVT_A037"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 1100,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_003",
+      "finding_type": "single_event",
+      "timestamp_start": 30.5,
+      "timestamp_end": 37.1,
+      "verbal_context": "y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de escribir nuevas experiencias.",
+      "channels_involved": [
+        "visual",
+        "verbal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "eyeSquintLeft",
+          "value": 0.396,
+          "timestamp": 31,
+          "event_id": "EVT_V031"
+        },
+        {
+          "channel": "visual",
+          "signal": "eyeSquintRight",
+          "value": 0.431,
+          "timestamp": 35,
+          "event_id": "EVT_V032"
+        }
+      ],
+      "cross_channel_pattern": "tension_facial_durante_discurso_positivo",
+      "confidence": "MEDIUM",
+      "hypotheses": [
+        "Carga cognitiva al autoevaluarse en formato grabado",
+        "Esfuerzo por seleccionar palabras adecuadas",
+        "Cambios faciales normales de procesamiento"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "MEDIA",
+          "question": "Pedir ejemplo concreto: 'y creo que soy muy responsable a la hora de ponerlo mejor de mí, con ganas de es...'"
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "Formato video CV sin interlocutor"
+        ],
+        "visual": [
+          "Face visibility: 79.2%",
+          "Muestreo 1fps"
+        ],
+        "verbal": [
+          "Discurso preparado"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R1"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_023",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_017",
+      "timestamp_start": 34.9,
+      "timestamp_end": 36.9,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.402,
+          "timestamp": 36,
+          "event_id": "EVT_V033"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.423,
+          "timestamp": 36,
+          "event_id": "EVT_V034"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.356,
+          "timestamp": 36,
+          "event_id": "EVT_V035"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.2,
+          "timestamp": 35.9,
+          "event_id": "EVT_A044"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 100,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    },
+    {
+      "hallazgo_id": "HALL_024",
+      "finding_type": "cluster",
+      "cluster_id": "CLUSTER_018",
+      "timestamp_start": 35.2,
+      "timestamp_end": 37.2,
+      "verbal_context": "No hay transcripción cercana",
+      "channels_involved": [
+        "visual",
+        "vocal"
+      ],
+      "observed_signals": [
+        {
+          "channel": "visual",
+          "signal": "browInnerUp",
+          "value": 0.402,
+          "timestamp": 36,
+          "event_id": "EVT_V033"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpLeft",
+          "value": 0.423,
+          "timestamp": 36,
+          "event_id": "EVT_V034"
+        },
+        {
+          "channel": "visual",
+          "signal": "browOuterUpRight",
+          "value": 0.356,
+          "timestamp": 36,
+          "event_id": "EVT_V035"
+        },
+        {
+          "channel": "vocal",
+          "signal": "high_energy",
+          "zscore": 2.19,
+          "timestamp": 36.2,
+          "event_id": "EVT_A045"
+        }
+      ],
+      "cross_channel_pattern": "convergencia_multimodal_cejas_energia",
+      "temporal_overlap_ms": 200,
+      "confidence": "HIGH",
+      "hypotheses": [
+        "Énfasis comunicativo intencional durante contenido relevante",
+        "Mayor activación fisiológica al abordar autoevaluaciones",
+        "Patrón expresivo habitual del candidato"
+      ],
+      "recommended_followup": [
+        {
+          "priority": "ALTA",
+          "question": "Repreguntar sobre: 'No hay transcripción cercana'"
+        },
+        {
+          "priority": "MEDIA",
+          "question": "Comparar con momentos de similar contenido."
+        }
+      ],
+      "limitations": {
+        "generales": [
+          "La activación puede ser énfasis normal"
+        ],
+        "vocal": [
+          "Z-score relativo a baseline propia, no poblacional"
+        ],
+        "visual": [
+          "Face: 79.2%"
+        ]
+      },
+      "evidence_quality": {
+        "visual_quality": "media",
+        "audio_quality": "alta",
+        "face_visibility_pct": 79.2
+      },
+      "rules_triggered": [
+        "R3"
+      ],
+      "pipeline_version": "4.0"
+    }
+  ],
+  "negative_findings": {
+    "no_deception_indicators": true,
+    "no_vocal_tremor_detected": true,
+    "note": "No se detectaron convergencias multimodales que sugieran ocultamiento. Las señales observadas son compatibles con activación normal en formato video CV."
+  },
+  "status": "complete — v4.0 — SPEC v4.0",
+  "protocolo_uso": "Este sistema no determina veracidad ni estado psicológico. Requiere consentimiento informado, revisión humana y no debe usarse como único criterio de decisión."
+}

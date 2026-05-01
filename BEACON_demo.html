@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEACON — Behavioral Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0c0f;
+    --surface: #111418;
+    --surface2: #181c22;
+    --border: #1e2530;
+    --border2: #2a3444;
+    --accent: #00d4aa;
+    --accent2: #0099ff;
+    --warn: #f59e0b;
+    --danger: #ef4444;
+    --text: #e2e8f0;
+    --text2: #8896a8;
+    --text3: #4a5568;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'DM Sans', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* Subtle grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(0,212,170,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,170,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo-area {}
+  .logo-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+  .logo-title {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+  .logo-title span { color: var(--accent); font-weight: 500; }
+  .logo-sub {
+    font-size: 12px;
+    color: var(--text3);
+    font-family: var(--mono);
+    margin-top: 4px;
+  }
+
+  .status-dot {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text2);
+  }
+  .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* API Key section */
+  .api-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .api-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+  }
+  .api-input {
+    flex: 1;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .api-input:focus { border-color: var(--accent); }
+  .api-input::placeholder { color: var(--text3); }
+
+  /* Meta cards */
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 1.5rem;
+  }
+  .meta-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  .meta-card-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+  .meta-card-value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+  }
+  .meta-card-value.accent { color: var(--accent); }
+  .meta-card-value.warn { color: var(--warn); }
+
+  /* Discrepancy pills */
+  .pills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+  }
+  .pill {
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    border: 1px solid rgba(245,158,11,0.3);
+    background: rgba(245,158,11,0.06);
+    color: var(--warn);
+    cursor: default;
+  }
+
+  /* Analyze button */
+  .analyze-btn {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  .analyze-btn:hover:not(:disabled) {
+    background: rgba(0,212,170,0.08);
+  }
+  .analyze-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* Guardrail badge */
+  .guardrail {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: #22c55e;
+    background: rgba(34,197,94,0.06);
+    border: 1px solid rgba(34,197,94,0.2);
+    border-radius: 6px;
+    padding: 8px 14px;
+    margin-bottom: 1.5rem;
+  }
+  .guardrail.visible { display: flex; }
+  .guardrail-dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
+
+  /* Loading */
+  .loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text2);
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+  .loading-bar {
+    width: 120px;
+    height: 2px;
+    background: var(--border);
+    border-radius: 2px;
+    margin: 1rem auto 0;
+    overflow: hidden;
+  }
+  .loading-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 40%;
+    background: var(--accent);
+    border-radius: 2px;
+    animation: slide 1.2s ease-in-out infinite;
+  }
+  @keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(350%); }
+  }
+
+  /* Result sections */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    background: rgba(0,212,170,0.08);
+    border: 1px solid rgba(0,212,170,0.2);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .section-title {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text2);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .section-body {
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.8;
+    white-space: pre-wrap;
+  }
+
+  /* Error */
+  .error-msg {
+    background: rgba(239,68,68,0.06);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    color: #fca5a5;
+    font-family: var(--mono);
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+  }
+  .footer-right {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text3);
+  }
+  .footer-right span { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    .meta-grid { grid-template-columns: repeat(2, 1fr); }
+    .header { flex-direction: column; gap: 1rem; }
+    .api-section { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="logo-area">
+      <div class="logo-tag">Sistema de análisis conductual</div>
+      <div class="logo-title"><span>BEACON</span></div>
+      <div class="logo-sub">Behavioral Expression & Communication Observation Network</div>
+    </div>
+    <div class="status-dot">
+      <div class="dot"></div>
+      SYSTEM READY
+    </div>
+  </div>
+
+  <div class="api-section">
+    <div class="api-label">API Key</div>
+    <input type="password" class="api-input" id="apiKey" placeholder="sk-ant-api03-..." />
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-card">
+      <div class="meta-card-label">Candidato</div>
+      <div class="meta-card-value">Candidato A</div>
+    </div>
+    <div class="meta-card">
+      <div class="meta-card-label">Posición</div>
+      <div class="meta-card-value">Senior Backend</div>
+    </div>
+    <div class="meta-card">
+      <div class="meta-card-label">Duración</div>
+      <div class="meta-card-value accent">3m 05s</div>
+    </div>
+    <div class="meta-card">
+      <div class="meta-card-label">Discrepancias</div>
+      <div class="meta-card-value warn">4 detectadas</div>
+    </div>
+  </div>
+
+  <div class="pills-row">
+    <span class="pill">⚑ t=00:45 — trabajo en equipo</span>
+    <span class="pill">⚑ t=01:10 — manejo de presión</span>
+    <span class="pill">⚑ t=01:40 — conflicto con PM</span>
+    <span class="pill">⚑ t=02:36 — salida del empleo</span>
+  </div>
+
+  <button class="analyze-btn" id="analyzeBtn" onclick="runAnalysis()">
+    [ INICIAR ANÁLISIS BEACON ]
+  </button>
+
+  <div class="guardrail" id="guardrail">
+    <div class="guardrail-dot"></div>
+    GUARDRAILS ACTIVOS — análisis neutral · sin juicios de contratación · sin diagnóstico psicológico
+  </div>
+
+  <div id="output"></div>
+
+  <div class="footer">
+    <div class="footer-left">BEACON v1.0 · BEACON-TEST-001 · 2026-04-30</div>
+    <div class="footer-right">powered by <span>Claude Sonnet</span> via Anthropic API</div>
+  </div>
+
+</div>
+
+<script>
+const BEHAVIORAL_JSON = {
+  interview_id: "BEACON-TEST-001",
+  candidate_alias: "Candidato A",
+  duration_seconds: 185,
+  position: "Senior Backend Engineer",
+  transcript: [
+    {start:0.0,end:8.5,text:"Buenas tardes, gracias por recibirme. Tengo ocho años de experiencia en backend."},
+    {start:9.0,end:22.0,text:"En mi último proyecto lideré la migración de un monolito a microservicios, reduciendo latencia en un 40%."},
+    {start:23.0,end:35.0,text:"Trabajé con Kafka, Docker, Kubernetes y PostgreSQL. Fue un desafío técnico importante."},
+    {start:45.0,end:58.0,text:"Bueno, el trabajo en equipo siempre fue complicado para mí... digo, fue un reto que superamos juntos."},
+    {start:70.0,end:85.0,text:"¿Manejo de presión? Sí, absolutamente. Me crezco bajo presión. Siempre entrego."},
+    {start:100.0,end:115.0,text:"El conflicto con el PM fue resuelto profesionalmente. No hubo problema real."},
+    {start:130.0,end:142.0,text:"Mi mayor debilidad... soy demasiado perfeccionista, a veces me quedo hasta tarde puliendo detalles."},
+    {start:155.0,end:170.0,text:"¿Por qué dejé mi último trabajo? Fue una decisión mutua. Crecimiento profesional."}
+  ],
+  visual_events: [
+    {timestamp:23.5,label:"micro_frown",confidence:0.87,context_utterance:"Trabajé con Kafka, Docker, Kubernetes..."},
+    {timestamp:45.2,label:"micro_smile_asymmetry",confidence:0.73,context_utterance:"...el trabajo en equipo siempre fue complicado para mí..."},
+    {timestamp:46.1,label:"self_touch",confidence:0.91,context_utterance:"...digo, fue un reto que superamos juntos."},
+    {timestamp:70.8,label:"micro_brow_raise",confidence:0.84,context_utterance:"¿Manejo de presión? Sí, absolutamente."},
+    {timestamp:100.5,label:"micro_frown_lip_depress",confidence:0.81,context_utterance:"El conflicto con el PM fue resuelto profesionalmente..."},
+    {timestamp:131.0,label:"head_tilt",confidence:0.89,context_utterance:"Mi mayor debilidad..."},
+    {timestamp:156.3,label:"micro_smile_eyes",confidence:0.76,context_utterance:"¿Por qué dejé mi último trabajo?"}
+  ],
+  vocal_events: [
+    {timestamp:22.0,label:"pitch_increase_62%",context_utterance:"...reduciendo latencia en un 40%."},
+    {timestamp:45.0,label:"rate_decrease_37%",context_utterance:"Bueno, el trabajo en equipo siempre fue complicado para mí..."},
+    {timestamp:46.5,label:"hesitation",context_utterance:"...digo, fue un reto que superamos juntos."},
+    {timestamp:70.5,label:"pitch_increase_73%",context_utterance:"¿Manejo de presión? Sí, absolutamente."},
+    {timestamp:100.0,label:"rate_increase_23%",context_utterance:"El conflicto con el PM fue resuelto profesionalmente."},
+    {timestamp:156.0,label:"vocal_tension",context_utterance:"¿Por qué dejé mi último trabajo? Fue una decisión mutua..."}
+  ],
+  discrepancy_flags: [
+    {timestamp:45.0,verbal:"fue un reto que superamos juntos",visual:"micro_smile_asymmetry + self_touch",vocal:"speech_rate_drop + hesitation",suggestion:"Explorar más sobre la experiencia real de trabajo en equipo."},
+    {timestamp:70.5,verbal:"Me crezco bajo presión. Siempre entrego.",visual:"micro_brow_raise (sorpresa/alerta)",vocal:"pitch_increase_73%",suggestion:"Preguntar por un ejemplo concreto de presión y resultado."},
+    {timestamp:100.0,verbal:"No hubo problema real.",visual:"micro_frown_lip_depress (supresión)",vocal:"speech_rate_increase (aceleración)",suggestion:"Indagar naturaleza real del conflicto con el PM."},
+    {timestamp:156.0,verbal:"Fue una decisión mutua. Crecimiento profesional.",visual:"micro_smile_eyes (posible ironía/ambivalencia)",vocal:"vocal_tension (jitter)",suggestion:"Verificar circunstancias de salida del empleo anterior."}
+  ]
+};
+
+const SECTION_LABELS = [
+  "EVENTOS VISUALES DESTACADOS",
+  "EVENTOS VOCALES DESTACADOS",
+  "PUNTOS DE DISCREPANCIA ENTRE CAPAS",
+  "MOMENTOS SUGERIDOS PARA REPREGUNTA"
+];
+
+async function runAnalysis() {
+  const apiKey = document.getElementById('apiKey').value.trim();
+  if (!apiKey) {
+    alert('Por favor ingresa tu Anthropic API Key');
+    return;
+  }
+
+  const btn = document.getElementById('analyzeBtn');
+  const output = document.getElementById('output');
+  const guardrail = document.getElementById('guardrail');
+
+  btn.disabled = true;
+  btn.textContent = '[ PROCESANDO... ]';
+  guardrail.classList.add('visible');
+  output.innerHTML = `
+    <div class="loading">
+      Analizando datos conductuales con Claude Sonnet...
+      <div class="loading-bar"></div>
+    </div>`;
+
+  const prompt = `Eres un asistente técnico de análisis de entrevistas para el sistema BEACON. Tu función es resumir de forma NEUTRAL y OBJETIVA los eventos conductuales detectados.
+
+REGLAS ESTRICTAS:
+- No afirmes que el candidato mintió o es deshonesto.
+- No recomiendes contratar o descartar al candidato.
+- No uses lenguaje de diagnóstico psicológico.
+- Describe OBSERVACIONES, no conclusiones.
+- Las discrepancias entre capas son "puntos a explorar", nunca acusaciones.
+- Usa timestamps concretos en formato [mm:ss].
+- Sé conciso y accionable para el entrevistador.
+
+DATOS DE LA ENTREVISTA:
+${JSON.stringify(BEHAVIORAL_JSON, null, 2)}
+
+Responde EXACTAMENTE con estas 4 secciones numeradas en español. Cada sección debe comenzar con su número y título exacto:
+
+1. EVENTOS VISUALES DESTACADOS
+[contenido]
+
+2. EVENTOS VOCALES DESTACADOS
+[contenido]
+
+3. PUNTOS DE DISCREPANCIA ENTRE CAPAS
+[contenido]
+
+4. MOMENTOS SUGERIDOS PARA REPREGUNTA
+[contenido]`;
+
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": apiKey,
+        "anthropic-version": "2023-06-01"
+      },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-5-20250929",
+        max_tokens: 1200,
+        messages: [{role: "user", content: prompt}]
+      })
+    });
+
+    if (!resp.ok) {
+      const err = await resp.json();
+      throw new Error(err.error?.message || `HTTP ${resp.status}`);
+    }
+
+    const data = await resp.json();
+    const text = data.content.map(b => b.text || '').join('');
+
+    // Parse sections
+    const sectionRegex = /(\d+)\.\s+([A-ZÁÉÍÓÚÑ\s]+)\n([\s\S]*?)(?=\d+\.\s+[A-ZÁÉÍÓÚÑ\s]+\n|$)/g;
+    let matches = [];
+    let m;
+    while ((m = sectionRegex.exec(text)) !== null) {
+      matches.push({ num: m[1], title: m[2].trim(), body: m[3].trim() });
+    }
+
+    if (matches.length === 0) {
+      output.innerHTML = `<div class="section">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <span class="section-title">ANÁLISIS BEACON</span>
+        </div>
+        <div class="section-body">${text}</div>
+      </div>`;
+    } else {
+      output.innerHTML = matches.map(s => `
+        <div class="section">
+          <div class="section-header">
+            <span class="section-num">0${s.num}</span>
+            <span class="section-title">${s.title}</span>
+          </div>
+          <div class="section-body">${s.body}</div>
+        </div>`).join('');
+    }
+
+    btn.textContent = '[ ANÁLISIS COMPLETADO ]';
+
+  } catch(err) {
+    output.innerHTML = `<div class="error-msg">ERROR: ${err.message}</div>`;
+    btn.disabled = false;
+    btn.textContent = '[ REINTENTAR ANÁLISIS ]';
+  }
+}
+</script>
+</body>
+</html>

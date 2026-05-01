@@ -1,0 +1,98 @@
+================================================================
+  BEACON — INFORME DE ANÁLISIS CONDUCTUAL
+================================================================
+  Entrevista: BEACON-CAMILA-001
+  Candidato: Camila Domínguez
+  Posición:  No especificada (video CV)
+  Duración:  37.7s
+  Generado:  2026-05-01 04:35:41
+  Capas:     Visual=35 | Vocal=44 | Verbal=6 | Flags=17
+================================================================
+
+# ANÁLISIS BEACON-CAMILA-001
+
+## 1. RESUMEN EJECUTIVO
+
+Camila muestra un patrón consistente de sobreesfuerzo performativo: alta energía vocal forzada, elevaciones constantes de cejas y microexpresiones de tensión cuando habla de sus fortalezas. El discurso verbal es autopromoción pura, pero el cuerpo dice "estoy esforzándome para convencerte". Hay fisuras claras entre lo que dice la boca y lo que filtran los músculos faciales. No detecté engaño directo, pero sí inseguridad compensada con volumen y gesticulación exagerada.
+
+---
+
+## 2. SEÑALES DE ALERTA
+
+**Patrón principal: Tensión facial durante autoafirmaciones positivas**
+- Cada vez que habla de sus capacidades (trabajo en equipo, comunicación, responsabilidad), aparecen microexpresiones de entrecerrar ojos (eyeSquint) y fruncimientos labiales. El cuerpo no cree lo que dice la boca.
+- Timestamps críticos: 19s, 20s, 25s, 31s, 35s — todos coinciden con declaraciones de fortaleza.
+
+**Sobrecompensación vocal extrema**
+- 28 eventos de energía vocal elevada en 37 segundos. Eso no es entusiasmo natural, es ansiedad camuflada como profesionalismo.
+- Los picos más altos (zscore 3.37 y 3.19) ocurren justo cuando habla de inglés y responsabilidad — temas donde probablemente siente más presión para impresionar.
+
+**Elevaciones de cejas constantes (browInnerUp/browOuterUp)**
+- 17 eventos de elevación de cejas. En contextos de presentación personal, esto indica súplica inconsciente ("créeme, por favor") o alerta defensiva.
+- No es expresividad normal, es un patrón de hipervigilancia: está monitoreando tu reacción mientras habla.
+
+**Errores verbales no casuales**
+- "Me consigieron una persona muy apasionada" — error gramatical bajo presión.
+- "con ganas de escribir nuevas experiencias" — quiso decir "vivir". El cerebro se adelanta cuando está nervioso.
+
+**Pausa abrupta en segundo 30**
+- Caída total de energía vocal (6 eventos consecutivos de low_energy_pause) justo después del pico de esfuerzo. Patrón de agotamiento cognitivo por sostener una performance.
+
+---
+
+## 3. LÍNEA DE TIEMPO CONDUCTUAL
+
+**0-7s: Presentación básica**
+- Verbal: Nombre, edad, estudios, trabajo actual.
+- Visual: Elevación de cejas desde el primer frame (0.589) + entrecerrar ojos. Ya está en modo defensivo antes de empezar.
+- Vocal: Picos de energía en 2.1-2.3s cuando dice su nombre. Sobreénfasis innecesario.
+- Interpretación: Ansiedad anticipatoria. Se está preparando para ser evaluada, no está presentándose con naturalidad.
+
+**7-17s: Habla de habilidades técnicas**
+- Verbal: Microsoft Office (Word, Excel, PowerPoint).
+- Visual: Nueva elevación de cejas a los 12s. Descenso brusco a los 14s mientras lista programas.
+- Vocal: Picos altos a 14.4-14.5s (zscore 2.7-2.75). Pausa vocal significativa a los 17s.
+- Interpretación: Está inflando competencias básicas. La pausa vocal sugiere que sabe que lo que acaba de decir es débil y está recalibrando.
+
+**17-25s: Autopromoción de soft skills**
+- Verbal: "Apasionada", "trabajo en equipo", "desenvolverme bien individualmente".
+- Visual: Entrecerrar ojos izquierdo a los 19-20s (onset/offset rápido = microexpresión genuina de duda). Más elevación de cejas a 24s con valores máximos (0.801, 0.878).
+- Vocal: Sin eventos críticos aquí, pero la ausencia de energía vocal mientras dice "apasionada" es notable.
+- Interpretación: El cuerpo no compra el discurso. Las microexpresiones de entrecerrar ojos son filtros de desconfianza inconsciente hacia sus propias palabras.
+
+**25-30s: Habla de inglés y responsabilidad**
+- Verbal: "Capacidades comunicativas", "nivel intermedio en inglés", "muy responsable".
+- Visual: Entrecerrar ojos a 25s. Fruncimiento de boca (mouthFrownRight) a 29s — primera expresión negativa clara.
+- Vocal: El pico más alto de toda la entrevista ocurre aquí (zscore 3.37 a 28.2s). Seguido de colapso vocal total a 30s (6 eventos de silencio consecutivo).
+- Interpretación: Máximo esfuerzo seguido de agotamiento. El fruncimiento labial mientras dice "responsable" es una fisura brutal: su expresión facial contradice la palabra que está pronunciando.
+
+**30-37s: Cierre forzado**
+- Verbal: "Poner lo mejor de mí", "con ganas de... escribir [error: vivir] nuevas experiencias".
+- Visual: Nueva elevación de cejas a 31s + entrecerrar ojos. Descenso final de todas las activaciones a 36s.
+- Vocal: Recuperación brusca de energía a 31s (2.84-2.85) tras la pausa. Últimos picos a 35.9-36.2s.
+- Interpretación: Está cerrando con un sprint final. El error verbal "escribir" en vez de "vivir" es un leak cognitivo: el cerebro ejecutivo está sobrecargado de mantener la performance.
+
+---
+
+## 4. PREGUNTAS PARA ROMPER EL DISCURSO
+
+**Sobre el trabajo actual:**
+- "Dijiste que trabajás part-time en Burger King. ¿Cuál es la parte más difícil de ese trabajo para vos?" 
+  - *Objetivo: Ver si mantiene la energía vocal artificial o si aparece autenticidad cuando habla de dificultades.*
+
+**Sobre habilidades técnicas:**
+- "Mencionaste Excel. Dame un ejemplo concreto de algo que hayas hecho con Excel en el último mes."
+  - *Objetivo: Testear si las habilidades son reales o decorativas. Observá si aparecen más microexpresiones de tensión.*
+
+**Sobre inglés:**
+- "¿En qué situaciones usás el inglés actualmente?"
+  - *Objetivo: El pico vocal más alto fue aquí. Presioná para ver si hay sustancia o es puro CV inflado.*
+
+**Sobre el error verbal:**
+- "Dijiste 'con ganas de escribir nuevas experiencias'. ¿Qué quisiste decir exactamente con eso?"
+  - *
+
+================================================================
+  BEACON v1.0 | Análisis conductual directo
+  Guardrails: sin juicios de contratación
+================================================================

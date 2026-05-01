@@ -1,0 +1,170 @@
+{
+  "interview_id": "BEACON-TEST-001",
+  "candidate_alias": "Candidato A",
+  "duration_seconds": 185,
+  "date": "2026-04-30T14:30:00Z",
+  "position": "Senior Backend Engineer",
+  
+  "transcript": [
+    {"start": 0.0, "end": 8.5, "text": "Buenas tardes, gracias por recibirme. Tengo ocho años de experiencia en backend."},
+    {"start": 9.0, "end": 22.0, "text": "En mi último proyecto lideré la migración de un monolito a microservicios, reduciendo latencia en un 40%."},
+    {"start": 23.0, "end": 35.0, "text": "Trabajé con Kafka, Docker, Kubernetes y PostgreSQL. Fue un desafío técnico importante."},
+    {"start": 45.0, "end": 58.0, "text": "Bueno, el trabajo en equipo siempre fue complicado para mí... digo, fue un reto que superamos juntos."},
+    {"start": 70.0, "end": 85.0, "text": "¿Manejo de presión? Sí, absolutamente. Me crezco bajo presión. Siempre entrego."},
+    {"start": 100.0, "end": 115.0, "text": "El conflicto con el PM fue resuelto profesionalmente. No hubo problema real."},
+    {"start": 130.0, "end": 142.0, "text": "Mi mayor debilidad... soy demasiado perfeccionista, a veces me quedo hasta tarde puliendo detalles."},
+    {"start": 155.0, "end": 170.0, "text": "¿Por qué dejé mi último trabajo? Fue una decisión mutua. Crecimiento profesional."}
+  ],
+
+  "visual_events": [
+    {
+      "timestamp": 23.5,
+      "type": "microexpression",
+      "action_units": {"AU4": 0.82, "AU7": 0.71},
+      "duration_ms": 180,
+      "label": "micro_frown",
+      "confidence": 0.87,
+      "context_utterance": "Trabajé con Kafka, Docker, Kubernetes..."
+    },
+    {
+      "timestamp": 45.2,
+      "type": "microexpression",
+      "action_units": {"AU12": 0.79, "AU14": 0.68},
+      "duration_ms": 210,
+      "label": "micro_smile_asymmetry",
+      "confidence": 0.73,
+      "context_utterance": "...el trabajo en equipo siempre fue complicado para mí..."
+    },
+    {
+      "timestamp": 46.1,
+      "type": "body_gesture",
+      "landmark": "right_hand_to_face",
+      "duration_ms": 450,
+      "label": "self_touch",
+      "confidence": 0.91,
+      "context_utterance": "...digo, fue un reto que superamos juntos."
+    },
+    {
+      "timestamp": 70.8,
+      "type": "microexpression",
+      "action_units": {"AU1": 0.76, "AU2": 0.81},
+      "duration_ms": 160,
+      "label": "micro_brow_raise",
+      "confidence": 0.84,
+      "context_utterance": "¿Manejo de presión? Sí, absolutamente. Me crezco bajo presión."
+    },
+    {
+      "timestamp": 100.5,
+      "type": "microexpression",
+      "action_units": {"AU4": 0.78, "AU15": 0.72},
+      "duration_ms": 195,
+      "label": "micro_frown_lip_depress",
+      "confidence": 0.81,
+      "context_utterance": "El conflicto con el PM fue resuelto profesionalmente..."
+    },
+    {
+      "timestamp": 131.0,
+      "type": "body_gesture",
+      "landmark": "head_tilt_left",
+      "duration_ms": 380,
+      "label": "head_tilt",
+      "confidence": 0.89,
+      "context_utterance": "Mi mayor debilidad... soy demasiado perfeccionista..."
+    },
+    {
+      "timestamp": 156.3,
+      "type": "microexpression",
+      "action_units": {"AU6": 0.69, "AU12": 0.74},
+      "duration_ms": 230,
+      "label": "micro_smile_eyes",
+      "confidence": 0.76,
+      "context_utterance": "¿Por qué dejé mi último trabajo? Fue una decisión mutua..."
+    }
+  ],
+
+  "vocal_events": [
+    {
+      "timestamp": 22.0,
+      "type": "pitch_spike",
+      "value_hz": 210,
+      "baseline_hz": 130,
+      "label": "pitch_increase_62%",
+      "context_utterance": "...reduciendo latencia en un 40%."
+    },
+    {
+      "timestamp": 45.0,
+      "type": "speech_rate_drop",
+      "value_wpm": 95,
+      "baseline_wpm": 150,
+      "label": "rate_decrease_37%",
+      "context_utterance": "Bueno, el trabajo en equipo siempre fue complicado para mí..."
+    },
+    {
+      "timestamp": 46.5,
+      "type": "filled_pause",
+      "value": "uh",
+      "duration_ms": 420,
+      "label": "hesitation",
+      "context_utterance": "...digo, fue un reto que superamos juntos."
+    },
+    {
+      "timestamp": 70.5,
+      "type": "pitch_spike",
+      "value_hz": 225,
+      "baseline_hz": 130,
+      "label": "pitch_increase_73%",
+      "context_utterance": "¿Manejo de presión? Sí, absolutamente."
+    },
+    {
+      "timestamp": 100.0,
+      "type": "speech_rate_increase",
+      "value_wpm": 185,
+      "baseline_wpm": 150,
+      "label": "rate_increase_23%",
+      "context_utterance": "El conflicto con el PM fue resuelto profesionalmente."
+    },
+    {
+      "timestamp": 156.0,
+      "type": "voice_quality_change",
+      "value": "jitter_increase",
+      "label": "vocal_tension",
+      "confidence": 0.79,
+      "context_utterance": "¿Por qué dejé mi último trabajo? Fue una decisión mutua..."
+    }
+  ],
+
+  "discrepancy_flags": [
+    {
+      "timestamp": 45.0,
+      "verbal": "fue un reto que superamos juntos",
+      "visual": "micro_smile_asymmetry + self_touch",
+      "vocal": "speech_rate_drop + hesitation",
+      "layers_mismatch": ["verbal-positive", "visual-discomfort", "vocal-uncertainty"],
+      "suggestion": "Explorar más sobre la experiencia real de trabajo en equipo."
+    },
+    {
+      "timestamp": 70.5,
+      "verbal": "Me crezco bajo presión. Siempre entrego.",
+      "visual": "micro_brow_raise (sorpresa/alerta)",
+      "vocal": "pitch_increase_73%",
+      "layers_mismatch": ["verbal-confident", "visual-alert", "vocal-arousal"],
+      "suggestion": "Preguntar por un ejemplo concreto de presión y resultado."
+    },
+    {
+      "timestamp": 100.0,
+      "verbal": "No hubo problema real.",
+      "visual": "micro_frown_lip_depress (supresión)",
+      "vocal": "speech_rate_increase (aceleración)",
+      "layers_mismatch": ["verbal-neutral", "visual-negative", "vocal-rush"],
+      "suggestion": "Indagar naturaleza real del conflicto con el PM."
+    },
+    {
+      "timestamp": 156.0,
+      "verbal": "Fue una decisión mutua. Crecimiento profesional.",
+      "visual": "micro_smile_eyes (posible ironía/ambivalencia)",
+      "vocal": "vocal_tension (jitter)",
+      "layers_mismatch": ["verbal-positive", "visual-ambivalent", "vocal-stress"],
+      "suggestion": "Verificar circunstancias de salida del empleo anterior."
+    }
+  ]
+}

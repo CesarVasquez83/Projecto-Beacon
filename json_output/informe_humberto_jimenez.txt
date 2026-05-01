@@ -1,0 +1,99 @@
+================================================================
+  BEACON — INFORME DE ANÁLISIS CONDUCTUAL
+================================================================
+  Entrevista: BEACON-20260501-060415
+  Candidato: Humberto Jimenez
+  Posición:  No especificado
+  Duración:  47.6s
+  Generado:  2026-05-01 06:05:12
+  Capas:     Visual=0 | Vocal=168 | Verbal=17 | Flags=0
+================================================================
+
+# ANÁLISIS BEACON — Humberto Jimenez
+
+## 1. RESUMEN EJECUTIVO
+
+Candidato joven (17 años) con discurso memorizado y extremadamente ensayado. La energía vocal es artificial: alterna entre picos forzados y caídas abruptas, con un patrón que grita "estoy recitando". La repetición literal del inicio al final (43-47s) confirma que esto es un guion. No hay mentira, pero tampoco hay autenticidad: es un robot leyendo su CV en voz alta.
+
+## 2. SEÑALES DE ALERTA
+
+- **Discurso robotizado**: El video repite textualmente la introducción al final (43.3-47.5s = copia exacta de 0-5s). Esto no es nerviosismo, es edición o reseteo del candidato recitando líneas memorizadas.
+
+- **Energía vocal en montaña rusa**: Patrones consistentes de picos altos (z>2.0) seguidos por caídas sostenidas (z<-1.5) cada 3-5 segundos. Este ritmo no es natural en conversación humana — es típico de alguien que lee en voz alta con énfasis artificial en ciertas palabras.
+
+- **Pausas idénticas y sostenidas**: Las caídas de energía (5.0-5.5s, 13.4-14.2s, 20.2-20.8s, etc.) duran exactamente 0.5-1.0 segundos y tienen la misma forma. Son respiraciones programadas, no pensamiento activo.
+
+- **Cero señales visuales**: Ni un solo evento registrado en la capa visual. O el candidato está inmóvil como estatua, o el sistema no pudo capturar nada porque la grabación fue editada/artificial.
+
+- **Falta de congruencia emocional**: Habla de "pasión" y "trabajar en equipo" con la misma energía plana y mecánica con la que dice su edad. No hay variación emocional real.
+
+## 3. LÍNEA DE TIEMPO CONDUCTUAL
+
+**[0.0-2.0s] — Presentación inicial**
+- **Texto**: "Buenas tardes, mi nombre es Humberto Damienes..."
+- **Vocal**: Arranca con 4 picos consecutivos de alta energía (z=2.66, 2.94, 2.48, 2.07)
+- **Interpretación**: Energía completamente forzada. Nadie habla así naturalmente. Es el clásico "voy a hablar fuerte y claro porque estoy grabando".
+
+**[2.1-5.5s] — Edad y ubicación**
+- **Texto**: "...tengo 17 años y soy de la Ciudad de México"
+- **Vocal**: Colapso energético sostenido (5.0-5.5s, 12 eventos consecutivos de baja energía, z=-1.55 a -1.65)
+- **Interpretación**: Terminó la frase ensayada, respira, resetea para la siguiente línea. Este patrón se repite cada vez que termina un bloque de información.
+
+**[5.6-13.3s] — Estudios**
+- **Texto**: Describe el ECCI 4 del Politécnico Nacional
+- **Vocal**: Recupera energía brevemente (5.8-7.1s, z~2.0), luego otra caída idéntica (9.3-9.6s), repunta al final con cluster de picos en 13.1-13.2s (z>2.2)
+- **Interpretación**: Sigue el patrón: sube voz → dice datos → baja voz → repite. Como un TTS (text-to-speech) malo.
+
+**[13.4-20.2s] — Experiencia laboral**
+- **Texto**: Tienda de abarrotes (1 año) y restaurante (3 años)
+- **Vocal**: Pausa larga (13.4-14.2s, 15 eventos de baja energía), luego escalada de energía forzada (14.2-15.7s, z=2.06 → 2.51)
+- **Interpretación**: La energía alta en 14.7s (z=2.51) debería acompañar algo emocionalmente importante. En cambio, está describiendo una tienda de abarrotes. Desconexión total entre contenido y tono.
+
+**[20.2-25.9s] — Servicio al cliente**
+- **Texto**: "...donde yo siempre trataba mis clientes con mi mejor servicio"
+- **Vocal**: Caída mecánica (20.2-20.5s, 11 eventos consecutivos), recuperación breve (20.8s), otra caída (22.5-22.8s), y una más extensa (25.6-26.5s, 26 eventos de baja energía)
+- **Interpretación**: Esta es la pausa más larga del video. ¿Por qué? Porque está respirando antes de la parte de "cualidades personales". No hay pensamiento, hay actuación.
+
+**[26.2-35.4s] — Autopercepción**
+- **Texto**: "Me considero una persona muy apasionada... trabajo en equipo..."
+- **Vocal**: Picos aislados en 27.0s, 29.3s, 32.9-33.0s (z>2.0 hasta 2.62)
+- **Interpretación**: La palabra "apasionada" debería tener calor genuino. En cambio, tiene el mismo pico artificial que usó para decir "Politécnico Nacional". Este tipo no siente lo que dice.
+
+**[35.5-42.1s] — Cierre motivacional**
+- **Texto**: "Estoy en busca de una empresa donde pueda seguir desarrollándome..."
+- **Vocal**: Caída extendida (35.5-36.1s, 15 eventos), explosión energética (36.3-36.4s, z=2.86, el pico más alto del video), luego apagón final (41.7-42.1s, 14 eventos)
+- **Interpretación**: El pico de z=2.86 es teatral. Y el "Muchas gracias" (42.2-42.7s) viene precedido por el silencio más profundo del video (z=-1.74). Es un final de actuación, no de conversación.
+
+**[43.3-47.5s] — REPETICIÓN LITERAL**
+- **Texto**: "Buenas tardes, mi nombre es Humberto Damienes, tengo 17 años..."
+- **Vocal**: Mismo patrón exacto que al inicio (43.5s: z=2.99, 43.6s: z=2.65)
+- **Interpretación**: **Esto es crítico**. El candidato repite palabra por palabra los primeros 5 segundos. O grabó múltiples takes y esto es un error de edición, o simplemente reinició el guion. En cualquier caso, no hay espontaneidad ni autenticidad.
+
+## 4. PREGUNTAS PARA ROMPER EL DISCURSO
+
+1. **"Cuéntame de un día específico en el restaurante donde algo salió mal con un cliente. ¿Qué pasó exactamente?"**
+   - Va a tartamudear. No tiene historias reales memorizadas, solo frases genéricas como "mejor servicio".
+
+2. **"Dijiste que eres 'apasionado en todo lo que haces'. Dame un ejemplo de algo que hayas hecho en el último mes que muestre esa pasión."**
+   - Si vacila o da una respuesta vaga ("pues... mi escuela..."), confirmas que son palabras vacías.
+
+3. **"¿Por qué ingeniería de procesos industriales específicamente? ¿Qué fue lo que te enganchó de esa carrera?"**
+   - Su discurso menciona la carrera pero sin conexión emocional. Si no puede articular una razón personal concreta, está estudiando por inercia o presión externa.
+
+4. **"Trabajaste 3 años en un restaurante. ¿Cuál fue el conflicto más difícil que tuviste con un compañero de trabajo y cómo lo resolviste?"**
+   - El discurso habla de "trabajo en equipo" pero cero detalles. Presiona aquí. Si nunca tuvo conflictos, o está mintiendo o nunca trabajó realmente en equipo.
+
+5. **"¿Qué habilidad específica de tu trabajo en el restaurante crees que te hace valioso para esta posición?"**
+   - No sabemos qué posición es. Pero esta pregunta lo fuerza a conectar experiencia con valor, algo que su discurso ensayado NO hace.
+
+6. **"Si tuvieras que empezar mañana y tu jefe te pide hacer algo que nunca has hecho, ¿cuál sería tu primer paso?"**
+   - Prueba su capacidad de pensamiento real versus discurso memorizado. Busca vacilación, muletillas, o respuestas genéricas ("pues... investigar...").
+
+---
+
+**NOTA FINAL**: Este candidato tiene 17 años. La falta de autenticidad es esperable en alguien joven sin experiencia en entrevistas. Pero el nivel de robotización aquí es extremo incluso para esa edad. O lo entrenaron mal ("memoriza esto"), o tiene ansiedad social severa que lo convierte en autómata bajo presión. En cualquier caso, necesitas quebrar el guion para ver quién es realmente.
+
+================================================================
+  BEACON v1.0 | Análisis conductual directo
+  Guardrails: sin juicios de contratación
+================================================================
