@@ -1,0 +1,25 @@
+# API Keys
+*.key
+.env
+*api-key*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+beacon_venv/
+
+# MediaPipe model (muy pesado)
+*.task
+
+# Output de runs
+frames_output/
+audio_output/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Documentos personales
+*API key*.docx
+PLANNING.docx
