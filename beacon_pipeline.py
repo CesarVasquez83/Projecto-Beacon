@@ -2,6 +2,7 @@
 """
 BEACON v4.0 — Behavioral Observability Platform
 Pipeline regido por BEACON_SPEC.md v4.0
+MIGRADO A AWS BEDROCK — Claude Haiku 4.5
 """
 
 import argparse, subprocess, json, sys, os
@@ -59,7 +60,7 @@ parser = argparse.ArgumentParser(description=f"BEACON v{PIPELINE_VERSION}")
 parser.add_argument("--video", required=True)
 parser.add_argument("--nombre", required=True)
 parser.add_argument("--puesto", default="No especificado")
-parser.add_argument("--api-key", default=None)
+parser.add_argument("--region", default="us-east-1", help="AWS region para Bedrock")
 args = parser.parse_args()
 
 VIDEO_PATH = Path(args.video)
@@ -79,6 +80,7 @@ for d in [FRAMES_DIR, AUDIO_DIR, JSON_DIR]:
 print("=" * 60)
 print(f"  BEACON v{PIPELINE_VERSION} — Behavioral Observability Platform")
 print(f"  SPEC v4.0 | Candidato: {NOMBRE}")
+print(f"  Motor: AWS Bedrock — Claude Haiku 4.5")
 print("=" * 60)
 
 # ===== 1. Extracción =====
@@ -350,18 +352,33 @@ print(f"  Eventos: Visual={len(visual_events)} | Vocal={len(vocal_events)} | Ver
 print(f"  Hallazgos: {len(hallazgos_unicos)} (HIGH={high_count} | MEDIUM={med_count} | LOW={low_count})")
 print(f"  Face: {face_visibility}% | Audio: {'Alta' if rms_mean > 0.01 else 'Baja'}")
 
-# ===== 8. Informe (Contrato SPEC v4.0) =====
-if args.api_key:
-    print(f"\n[7/7] Generando informe (SPEC v4.0)...")
-    import anthropic
-    client = anthropic.Anthropic(api_key=args.api_key)
-    prompt = BEACON_PROMPT + f"\n\nDATOS DE LA ENTREVISTA:\n{json.dumps(behavioral, indent=2, ensure_ascii=False)}\n\nGenera el informe siguiendo ESTRICTAMENTE la estructura del contrato."
-    message = client.messages.create(model="claude-sonnet-4-5-20250929", max_tokens=2500, messages=[{"role": "user", "content": prompt}])
-    report = message.content[0].text
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    full_report = f"""================================================================
+# ===== 8. Informe — AWS Bedrock (Claude Haiku 4.5) =====
+print(f"\n[7/7] Generando informe via AWS Bedrock (Claude Haiku 4.5)...")
+import boto3
+
+bedrock = boto3.client("bedrock-runtime", region_name=args.region)
+
+prompt = (
+    BEACON_PROMPT
+    + f"\n\nDATOS DE LA ENTREVISTA:\n{json.dumps(behavioral, indent=2, ensure_ascii=False)}"
+    + "\n\nGenera el informe siguiendo ESTRICTAMENTE la estructura del contrato."
+)
+
+response = bedrock.invoke_model(
+    modelId="us.anthropic.claude-haiku-4-5-20251001-v1:0",
+    body=json.dumps({
+        "anthropic_version": "bedrock-2023-05-31",
+        "max_tokens": 2500,
+        "messages": [{"role": "user", "content": prompt}]
+    })
+)
+
+report = json.loads(response["body"].read())["content"][0]["text"]
+
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+full_report = f"""================================================================
   BEACON v{PIPELINE_VERSION} — Behavioral Observability Platform
-  SPEC v4.0
+  SPEC v4.0 | Motor: AWS Bedrock — Claude Haiku 4.5
 ================================================================
   Reporte: {behavioral['report_id']}
   Candidato: {NOMBRE} | Puesto: {PUESTO} | Duración: {duration:.1f}s
@@ -380,9 +397,10 @@ if args.api_key:
   Herramienta de apoyo al entrevistador humano.
 ================================================================
 """
-    with open(REPORT_OUT, "w", encoding="utf-8") as f:
-        f.write(full_report)
-    print(f"  Informe: {REPORT_OUT}")
+with open(REPORT_OUT, "w", encoding="utf-8") as f:
+    f.write(full_report)
+print(f"  Informe: {REPORT_OUT}")
 
 print(f"{'='*60}\n")
 print("BEACON v4.0 — SPEC congelado. Pipeline regido por BEACON_SPEC.md")
+print("Motor cognitivo: AWS Bedrock — Claude Haiku 4.5")
