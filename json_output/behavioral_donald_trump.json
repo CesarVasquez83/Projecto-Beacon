@@ -1,0 +1,631 @@
+{
+  "report_id": "BEACON-20260501-194813",
+  "pipeline_version": "4.0",
+  "spec_version": "4.0",
+  "candidate_alias": "Donald Trump",
+  "position": "Presidente USA",
+  "duration_seconds": 44.3,
+  "source_video": "trump.mp4",
+  "product_label": "BEACON — Behavioral Observability Platform",
+  "methodology": {
+    "disclaimer": "BEACON no determina veracidad ni estado psicológico. Detecta convergencias observables entre canales comunicativos para guiar repreguntas del entrevistador humano.",
+    "confidence_definition": "HIGH: convergencia 2+ canales ≤1.5s. MEDIUM: señal en 1 canal con correlación parcial. LOW: señal aislada. No implica certeza sobre estado del candidato.",
+    "zscore_note": "Z-score relativo a baseline del propio video, no poblacional.",
+    "usage_note": "Las observaciones requieren validación en interacción humana."
+  },
+  "signal_quality": {
+    "face_visibility_pct": 0.0,
+    "audio_clarity": "high",
+    "video_duration_short": false,
+    "total_frames": 48,
+    "frames_with_face": 0,
+    "fps": 1
+  },
+  "baseline": {
+    "vocal_energy_mean": 0.07559,
+    "vocal_energy_std": 0.06669,
+    "pitch_baseline_hz": 284.0,
+    "facial_activation_mean": {
+      "browInnerUp": 0,
+      "browDownLeft": 0,
+      "browDownRight": 0,
+      "browOuterUpLeft": 0,
+      "browOuterUpRight": 0,
+      "eyeWideLeft": 0,
+      "eyeWideRight": 0,
+      "eyeSquintLeft": 0,
+      "eyeSquintRight": 0,
+      "mouthSmileLeft": 0,
+      "mouthSmileRight": 0,
+      "mouthFrownLeft": 0,
+      "mouthFrownRight": 0,
+      "jawOpen": 0,
+      "lipCornerDepressorLeft": 0,
+      "lipCornerDepressorRight": 0
+    }
+  },
+  "transcript": [
+    {
+      "start": 0.0,
+      "end": 2.1,
+      "text": "They want to make a deal, but I'm not satisfied with it."
+    },
+    {
+      "start": 3.0,
+      "end": 11.4,
+      "text": "We have great respect for Pakistan and Islamabad and tremendous respect for the Prime Minister and the Field Marshal."
+    },
+    {
+      "start": 12.1,
+      "end": 21.3,
+      "text": "And they're working with us. They continue to work with us. But the trip is a very long one, and we're doing everything in terms of negotiation right now."
+    },
+    {
+      "start": 21.3,
+      "end": 31.1,
+      "text": "In terms of the negotiation telephonically, they've made strides, but I'm not sure if they ever get there."
+    },
+    {
+      "start": 32.6,
+      "end": 40.3,
+      "text": "There is tremendous discord. There's tremendous, they have a tremendous problem getting along with each other in Iran."
+    }
+  ],
+  "visual_events": [],
+  "vocal_events": [
+    {
+      "event_id": "EVT_A001",
+      "timestamp": 1.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.05
+    },
+    {
+      "event_id": "EVT_A002",
+      "timestamp": 1.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.16
+    },
+    {
+      "event_id": "EVT_A003",
+      "timestamp": 2.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.04
+    },
+    {
+      "event_id": "EVT_A004",
+      "timestamp": 2.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.08
+    },
+    {
+      "event_id": "EVT_A005",
+      "timestamp": 2.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.53
+    },
+    {
+      "event_id": "EVT_A006",
+      "timestamp": 2.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.53
+    },
+    {
+      "event_id": "EVT_A007",
+      "timestamp": 2.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.18
+    },
+    {
+      "event_id": "EVT_A008",
+      "timestamp": 2.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.52
+    },
+    {
+      "event_id": "EVT_A009",
+      "timestamp": 2.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.61
+    },
+    {
+      "event_id": "EVT_A010",
+      "timestamp": 2.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.46
+    },
+    {
+      "event_id": "EVT_A011",
+      "timestamp": 2.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.86
+    },
+    {
+      "event_id": "EVT_A012",
+      "timestamp": 2.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.44
+    },
+    {
+      "event_id": "EVT_A013",
+      "timestamp": 2.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.66
+    },
+    {
+      "event_id": "EVT_A014",
+      "timestamp": 3.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.38
+    },
+    {
+      "event_id": "EVT_A015",
+      "timestamp": 3.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.17
+    },
+    {
+      "event_id": "EVT_A016",
+      "timestamp": 3.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.02
+    },
+    {
+      "event_id": "EVT_A017",
+      "timestamp": 3.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.13
+    },
+    {
+      "event_id": "EVT_A018",
+      "timestamp": 3.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.04
+    },
+    {
+      "event_id": "EVT_A019",
+      "timestamp": 3.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.34
+    },
+    {
+      "event_id": "EVT_A020",
+      "timestamp": 3.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.42
+    },
+    {
+      "event_id": "EVT_A021",
+      "timestamp": 3.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.04
+    },
+    {
+      "event_id": "EVT_A022",
+      "timestamp": 5.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.06
+    },
+    {
+      "event_id": "EVT_A023",
+      "timestamp": 5.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.36
+    },
+    {
+      "event_id": "EVT_A024",
+      "timestamp": 5.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.52
+    },
+    {
+      "event_id": "EVT_A025",
+      "timestamp": 5.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.33
+    },
+    {
+      "event_id": "EVT_A026",
+      "timestamp": 7.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.08
+    },
+    {
+      "event_id": "EVT_A027",
+      "timestamp": 7.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.44
+    },
+    {
+      "event_id": "EVT_A028",
+      "timestamp": 7.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.41
+    },
+    {
+      "event_id": "EVT_A029",
+      "timestamp": 7.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.13
+    },
+    {
+      "event_id": "EVT_A030",
+      "timestamp": 7.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.35
+    },
+    {
+      "event_id": "EVT_A031",
+      "timestamp": 7.7,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.49
+    },
+    {
+      "event_id": "EVT_A032",
+      "timestamp": 7.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.61
+    },
+    {
+      "event_id": "EVT_A033",
+      "timestamp": 7.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.29
+    },
+    {
+      "event_id": "EVT_A034",
+      "timestamp": 9.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.13
+    },
+    {
+      "event_id": "EVT_A035",
+      "timestamp": 10.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.41
+    },
+    {
+      "event_id": "EVT_A036",
+      "timestamp": 10.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.21
+    },
+    {
+      "event_id": "EVT_A037",
+      "timestamp": 11.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.02
+    },
+    {
+      "event_id": "EVT_A038",
+      "timestamp": 11.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.29
+    },
+    {
+      "event_id": "EVT_A039",
+      "timestamp": 11.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.07
+    },
+    {
+      "event_id": "EVT_A040",
+      "timestamp": 12.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.13
+    },
+    {
+      "event_id": "EVT_A041",
+      "timestamp": 12.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.36
+    },
+    {
+      "event_id": "EVT_A042",
+      "timestamp": 12.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.31
+    },
+    {
+      "event_id": "EVT_A043",
+      "timestamp": 15.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.18
+    },
+    {
+      "event_id": "EVT_A044",
+      "timestamp": 15.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.01
+    },
+    {
+      "event_id": "EVT_A045",
+      "timestamp": 16.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.06
+    },
+    {
+      "event_id": "EVT_A046",
+      "timestamp": 16.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.34
+    },
+    {
+      "event_id": "EVT_A047",
+      "timestamp": 16.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.37
+    },
+    {
+      "event_id": "EVT_A048",
+      "timestamp": 24.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.2
+    },
+    {
+      "event_id": "EVT_A049",
+      "timestamp": 24.5,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.46
+    },
+    {
+      "event_id": "EVT_A050",
+      "timestamp": 24.6,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.07
+    },
+    {
+      "event_id": "EVT_A051",
+      "timestamp": 24.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.3
+    },
+    {
+      "event_id": "EVT_A052",
+      "timestamp": 24.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.71
+    },
+    {
+      "event_id": "EVT_A053",
+      "timestamp": 24.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.94
+    },
+    {
+      "event_id": "EVT_A054",
+      "timestamp": 24.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.23
+    },
+    {
+      "event_id": "EVT_A055",
+      "timestamp": 26.8,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.03
+    },
+    {
+      "event_id": "EVT_A056",
+      "timestamp": 26.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.41
+    },
+    {
+      "event_id": "EVT_A057",
+      "timestamp": 26.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.14
+    },
+    {
+      "event_id": "EVT_A058",
+      "timestamp": 27.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.18
+    },
+    {
+      "event_id": "EVT_A059",
+      "timestamp": 27.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.85
+    },
+    {
+      "event_id": "EVT_A060",
+      "timestamp": 27.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 3.0
+    },
+    {
+      "event_id": "EVT_A061",
+      "timestamp": 27.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.61
+    },
+    {
+      "event_id": "EVT_A062",
+      "timestamp": 27.4,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.59
+    },
+    {
+      "event_id": "EVT_A063",
+      "timestamp": 29.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.26
+    },
+    {
+      "event_id": "EVT_A064",
+      "timestamp": 29.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.56
+    },
+    {
+      "event_id": "EVT_A065",
+      "timestamp": 29.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.34
+    },
+    {
+      "event_id": "EVT_A066",
+      "timestamp": 29.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.0
+    },
+    {
+      "event_id": "EVT_A067",
+      "timestamp": 33.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.01
+    },
+    {
+      "event_id": "EVT_A068",
+      "timestamp": 33.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.33
+    },
+    {
+      "event_id": "EVT_A069",
+      "timestamp": 33.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.24
+    },
+    {
+      "event_id": "EVT_A070",
+      "timestamp": 34.1,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.04
+    },
+    {
+      "event_id": "EVT_A071",
+      "timestamp": 34.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.52
+    },
+    {
+      "event_id": "EVT_A072",
+      "timestamp": 34.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.65
+    },
+    {
+      "event_id": "EVT_A073",
+      "timestamp": 34.2,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.02
+    },
+    {
+      "event_id": "EVT_A074",
+      "timestamp": 37.9,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.2
+    },
+    {
+      "event_id": "EVT_A075",
+      "timestamp": 38.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.64
+    },
+    {
+      "event_id": "EVT_A076",
+      "timestamp": 38.0,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.37
+    },
+    {
+      "event_id": "EVT_A077",
+      "timestamp": 40.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.01
+    },
+    {
+      "event_id": "EVT_A078",
+      "timestamp": 40.3,
+      "channel": "vocal",
+      "signal_type": "high_energy",
+      "zscore": 2.04
+    }
+  ],
+  "hallazgos": [],
+  "negative_findings": {
+    "no_deception_indicators": true,
+    "no_vocal_tremor_detected": true,
+    "note": "No se detectaron convergencias multimodales que sugieran ocultamiento. Las señales observadas son compatibles con activación normal en formato video CV."
+  },
+  "status": "complete — v4.0 — SPEC v4.0",
+  "protocolo_uso": "Este sistema no determina veracidad ni estado psicológico. Requiere consentimiento informado, revisión humana y no debe usarse como único criterio de decisión."
+}

@@ -1,0 +1,108 @@
+================================================================
+  BEACON v4.0 — Behavioral Observability Platform
+  SPEC v4.0
+================================================================
+  Reporte: BEACON-20260501-194813
+  Candidato: Donald Trump | Puesto: Presidente USA | Duración: 44.3s
+  Generado: 2026-05-01 19:48:57
+  Señal: Face=0.0% | Audio=Alta
+  Hallazgos: 0 (HIGH=0 | MEDIUM=0 | LOW=0)
+================================================================
+  BEACON no determina veracidad ni estado psicológico. Detecta convergencias observables entre canales comunicativos para guiar repreguntas del entrevistador humano.
+================================================================
+
+# INFORME BEACON v4.0
+
+**REPORT ID:** BEACON-20260501-194813  
+**POSICIÓN:** Presidente USA  
+**DURACIÓN:** 44.3 segundos  
+**CALIDAD DE SEÑAL:** Audio de alta claridad | Sin datos faciales disponibles (0% visibilidad facial)
+
+---
+
+## 1. RESUMEN DE OBSERVACIONES
+
+Se registran 78 eventos de activación vocal elevada (z-score 2.0-3.66) distribuidos a lo largo de toda la intervención, particularmente concentrados en los primeros 3 segundos del discurso. No se dispone de datos faciales para análisis multimodal. La activación vocal observada es consistente con un patrón de énfasis retórico sostenido en contexto de declaración pública sobre negociaciones diplomáticas.
+
+---
+
+## 2. HALLAZGOS PRINCIPALES (HIGH CONFIDENCE)
+
+**No se detectaron convergencias multimodales de alta confianza.**
+
+La ausencia de canal visual impide establecer correlaciones entre señales vocales y faciales. Según el SPEC v4.0, la confianza HIGH requiere convergencia de 2+ canales en ventana ≤1.5s, criterio no alcanzable en este caso.
+
+---
+
+## 3. OTROS PUNTOS DE ATENCIÓN (MEDIUM/LOW CONFIDENCE)
+
+### 3.1 Activación Vocal en Apertura [**LOW CONFIDENCE**]
+- **Timestamps:** 1.4s - 3.1s (18 eventos consecutivos)
+- **Contexto semántico:** *"I'm not satisfied with it"* [frase negativa sobre el acuerdo]
+- **Patrón:** Cluster denso con pico máximo z=3.66 en t=2.9s
+- **Observación:** Se detecta elevación de energía vocal al expresar insatisfacción. Podría reflejar énfasis intencional en declaración diplomática. **Esta es una señal aislada en un solo canal; puede ser variabilidad normal del discurso enfático.**
+
+### 3.2 Activación en Segmento Final [**LOW CONFIDENCE**]
+- **Timestamps:** 32.6s - 40.3s (concordante con tema "discord" e Iran)
+- **Contexto semántico:** *"tremendous discord... tremendous problem getting along with each other in Iran"*
+- **Patrón:** Eventos dispersos (z=2.0-2.65) alineados con palabras de carga semántica negativa ("discord", "problem")
+- **Observación:** La activación vocal coincide con términos de contenido conflictivo. Una hipótesis prudente es énfasis retórico sobre problemas geopolíticos. **Sin convergencia facial, no se puede descartar que sea prosódico-comunicativo estándar.**
+
+### 3.3 Repetición de Palabra "Tremendous" [**LOW CONFIDENCE**]
+- **Observación:** Se registra uso múltiple del término "tremendous" (5.0s, 32.6s, 33.1s, 34.1s, 37.9s)
+- **Nota lingüística:** Patrón léxico repetitivo observable en transcripción
+- **Interpretación:** Puede reflejar estilo retórico característico o estrategia de refuerzo persuasivo. No constituye señal conductual en el sentido del análisis multimodal.
+
+---
+
+## 4. PREGUNTAS SUGERIDAS
+
+### PRIORIDAD CONTEXTUAL (No hay preguntas de prioridad alta ante ausencia de convergencias HIGH)
+
+**C1. Profundización en criterios de satisfacción**  
+*"Mencionó que no está satisfecho con el acuerdo actual. ¿Podría describir cuáles serían los 2-3 elementos específicos que necesitarían cambiar para considerarlo aceptable?"*  
+**Justificación:** La activación vocal en t=1.4-3.1s coincide con declaración de insatisfacción. Solicitar detalles concretos permite evaluar coherencia entre intensidad comunicativa y sustancia de la objeción.
+
+**C2. Clarificación sobre el estado de la negociación**  
+*"Indicó estar haciendo 'todo en términos de negociación' pero también que 'no está seguro si llegarán allí'. ¿Qué indicadores concretos está usando para medir el progreso actual?"*  
+**Justificación:** Se observa tensión semántica entre "strides" (avances) y "not sure if they ever get there" (incertidumbre). Explorar métricas específicas ayuda a calibrar precisión vs. ambigüedad en la respuesta.
+
+**C3. Alcance de la referencia a "discord in Iran"**  
+*"Al final mencionó problemas internos en Irán. ¿Esa evaluación está basada en inteligencia directa, o es parte del análisis general de la región?"*  
+**Justificación:** Activación vocal elevada (z=2.65-3.0) acompaña afirmaciones sobre conflicto interno en Irán. Verificar fuente de la información permite distinguir entre conocimiento verificado y valoración política.
+
+---
+
+## 5. NOTA METODOLÓGICA
+
+### Limitaciones Específicas de Este Análisis
+
+1. **Ausencia total de datos faciales:** 0% de visibilidad facial en los 48 frames procesados impide análisis de microexpresiones, tensión facial o convergencia oculomotora. El análisis se limita exclusivamente al canal vocal.
+
+2. **Z-scores relativos a baseline interno:** Los valores reportados (2.0-3.66) representan desviaciones respecto al propio discurso del candidato, **no** a población general. Un z-score de 3.0 indica activación elevada *relativa a su propia línea base en este video*, no un estándar absoluto.
+
+3. **Contexto de discurso público:** El formato de declaración diplomática favorece naturalmente énfasis retórico y prosódico. Las activaciones vocales observadas son **compatibles con comunicación política estándar** y no permiten inferencias sobre estados internos.
+
+4. **Duración de la muestra:** 44.3 segundos de audio limitan la capacidad de establecer patrones de consistencia a largo plazo.
+
+### Disclaimer Obligatorio
+
+**BEACON no determina veracidad, competencia, ni estado psicológico del candidato.** Este sistema detecta patrones observables en señales comunicativas para orientar la exploración humana. Las observaciones requieren:
+
+- Validación en interacción presencial
+- Integración con evaluación holística del perfil
+- Consentimiento informado del evaluado
+- Interpretación por profesional capacitado
+
+**Este informe NO debe usarse como único criterio de decisión.**
+
+---
+
+**Generado por BEACON v4.0 — Behavioral Observability Platform**  
+*Cumplimiento: SPEC v4.0 | Análisis descriptivo sin inferencia psicológica*
+
+================================================================
+  BEACON v4.0 | SPEC v4.0
+  Este informe no determina veracidad ni estado psicológico.
+  Herramienta de apoyo al entrevistador humano.
+================================================================
